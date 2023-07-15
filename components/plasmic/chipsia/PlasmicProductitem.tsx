@@ -424,7 +424,9 @@ function PlasmicProductitem__RenderFunc(props: {
                   return (
                     "Profit by Importing " +
                     $queries.query.data.response.items[0].fields.productName +
-                    " to your Country !"
+                    " to your Country ! - " +
+                    $queries.query.data.response.items[0].fields.productName +
+                    " exporter | Chipsia"
                   );
                 } catch (e) {
                   if (
