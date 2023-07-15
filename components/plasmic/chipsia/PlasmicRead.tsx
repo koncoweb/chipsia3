@@ -746,7 +746,7 @@ function PlasmicRead__RenderFunc(props: {
             )}
           >
             {
-              "Contact Us Today and ReapHuge Profits by Importing Indonesian Chips !"
+              "Contact Us today and reap Huge Profits by Importing Indonesian Chips !"
             }
           </h3>
           <Contactsection
