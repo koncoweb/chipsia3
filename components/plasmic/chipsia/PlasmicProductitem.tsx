@@ -482,7 +482,20 @@ function PlasmicProductitem__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.columns__dpyhB)}>
                 <div className={classNames(projectcss.all, sty.column__ypabH)}>
                   <p.PlasmicImg
-                    alt={""}
+                    alt={(() => {
+                      try {
+                        return $queries.componentData.data.response.fields
+                          .description;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return undefined;
+                        }
+                        throw e;
+                      }
+                    })()}
                     className={classNames(sty.img__kb7Qx)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
@@ -538,14 +551,27 @@ function PlasmicProductitem__RenderFunc(props: {
                         key={currentIndex}
                       >
                         <p.PlasmicImg
-                          alt={""}
+                          alt={(() => {
+                            try {
+                              return currentItem.fields.description;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
                           className={classNames(sty.img___9Leme)}
                           displayHeight={"200px" as const}
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
                           src={(() => {
                             try {
                               return currentItem.fields.file.url;
@@ -800,7 +826,20 @@ function PlasmicProductitem__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.columns__uAXwO)}>
                   <div className={classNames(projectcss.all, sty.column__e3Zl)}>
                     <p.PlasmicImg
-                      alt={""}
+                      alt={(() => {
+                        try {
+                          return $queries.componentData4.data.response.fields
+                            .description;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
                       className={classNames(sty.img__atm8G)}
                       displayHeight={"auto" as const}
                       displayMaxHeight={"none" as const}
