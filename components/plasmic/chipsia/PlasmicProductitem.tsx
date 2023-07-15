@@ -92,6 +92,7 @@ export type PlasmicProductitem__OverridesType = {
   productNameH1?: p.Flex<"h1">;
   slider?: p.Flex<typeof Slider>;
   descriptionH2Header?: p.Flex<"h2">;
+  article?: p.Flex<"article">;
   ingredientH2?: p.Flex<"h2">;
   ingredientsimage?: p.Flex<typeof p.PlasmicImg>;
   makingProcessesH2?: p.Flex<"h2">;
@@ -428,9 +429,14 @@ function PlasmicProductitem__RenderFunc(props: {
               className={classNames("__wab_instance", sty.pageMetadataOverride)}
               description={(() => {
                 try {
-                  return $queries.query.data.response.items[0].fields.productDescription.content[0].content[0].value.slice(
-                    0,
-                    120
+                  return (
+                    "Profit by Importing " +
+                    $queries.query.data.response.items[0].fields.productName +
+                    " to your Country ! " +
+                    $queries.query.data.response.items[0].fields.productDescription.content[0].content[0].value.slice(
+                      0,
+                      120
+                    )
                   );
                 } catch (e) {
                   if (
@@ -634,30 +640,50 @@ function PlasmicProductitem__RenderFunc(props: {
                       })()}
                     </React.Fragment>
                   </h2>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__cstHj
-                    )}
-                  >
-                    <React.Fragment>
-                      {(() => {
-                        try {
-                          return $queries.query.data.response.items[0].fields
-                            .productDescription.content[0].content[0].value;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "";
-                          }
-                          throw e;
+                  {(
+                    (() => {
+                      try {
+                        return $queries.query.data.response.items[0].fields
+                          .productDescription.content;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return [];
                         }
-                      })()}
-                    </React.Fragment>
-                  </div>
+                        throw e;
+                      }
+                    })() ?? []
+                  ).map((currentItem, currentIndex) => (
+                    <article
+                      data-plasmic-name={"article"}
+                      data-plasmic-override={overrides.article}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.article
+                      )}
+                      key={currentIndex}
+                    >
+                      <React.Fragment>
+                        {(() => {
+                          try {
+                            return currentItem.content[0].value;
+                          } catch (e) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
+                              return "";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </React.Fragment>
+                    </article>
+                  ))}
+
                   <Contactsection
                     className={classNames(
                       "__wab_instance",
@@ -1632,6 +1658,7 @@ const PlasmicDescendants = {
     "productNameH1",
     "slider",
     "descriptionH2Header",
+    "article",
     "ingredientH2",
     "ingredientsimage",
     "makingProcessesH2",
@@ -1657,6 +1684,7 @@ const PlasmicDescendants = {
     "productNameH1",
     "slider",
     "descriptionH2Header",
+    "article",
     "ingredientH2",
     "ingredientsimage",
     "makingProcessesH2"
@@ -1664,6 +1692,7 @@ const PlasmicDescendants = {
   productNameH1: ["productNameH1"],
   slider: ["slider"],
   descriptionH2Header: ["descriptionH2Header"],
+  article: ["article"],
   ingredientH2: ["ingredientH2"],
   ingredientsimage: ["ingredientsimage"],
   makingProcessesH2: ["makingProcessesH2"],
@@ -1701,6 +1730,7 @@ type NodeDefaultElementType = {
   productNameH1: "h1";
   slider: typeof Slider;
   descriptionH2Header: "h2";
+  article: "article";
   ingredientH2: "h2";
   ingredientsimage: typeof p.PlasmicImg;
   makingProcessesH2: "h2";
@@ -1786,6 +1816,7 @@ export const PlasmicProductitem = Object.assign(
     productNameH1: makeNodeComponent("productNameH1"),
     slider: makeNodeComponent("slider"),
     descriptionH2Header: makeNodeComponent("descriptionH2Header"),
+    article: makeNodeComponent("article"),
     ingredientH2: makeNodeComponent("ingredientH2"),
     ingredientsimage: makeNodeComponent("ingredientsimage"),
     makingProcessesH2: makeNodeComponent("makingProcessesH2"),
