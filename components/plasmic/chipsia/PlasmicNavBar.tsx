@@ -215,7 +215,17 @@ function PlasmicNavBar__RenderFunc(props: {
           }
           submitsForm={true}
         >
-          {"Chipsia"}
+          {true ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__xmpB
+              )}
+            >
+              {"Chipsia"}
+            </div>
+          ) : null}
         </Button>
         <p.Stack
           as={"div"}

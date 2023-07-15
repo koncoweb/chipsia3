@@ -169,276 +169,272 @@ function PlasmicPartnership__RenderFunc(props: {
         }
       `}</style>
 
-      <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
-          as={"div"}
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
-          data-plasmic-root={true}
-          data-plasmic-for-node={forNode}
-          hasGap={true}
-          className={classNames(
-            projectcss.all,
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root
-          )}
-        >
-          <div className={classNames(projectcss.all, sty.freeBox___0Zs2A)}>
-            <NavBar
-              data-plasmic-name={"navBar"}
-              data-plasmic-override={overrides.navBar}
-              className={classNames("__wab_instance", sty.navBar)}
-            />
+      <p.Stack
+        as={"div"}
+        data-plasmic-name={"root"}
+        data-plasmic-override={overrides.root}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        hasGap={true}
+        className={classNames(
+          projectcss.all,
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          projectcss.plasmic_tokens,
+          plasmic_antd_5_hostless_css.plasmic_tokens,
+          plasmic_plasmic_rich_components_css.plasmic_tokens,
+          sty.root
+        )}
+      >
+        <div className={classNames(projectcss.all, sty.freeBox___0Zs2A)}>
+          <NavBar
+            data-plasmic-name={"navBar"}
+            data-plasmic-override={overrides.navBar}
+            className={classNames("__wab_instance", sty.navBar)}
+          />
 
-            <div className={classNames(projectcss.all, sty.freeBox__ulvCj)} />
-          </div>
-          <div
-            data-plasmic-name={"pageBanner"}
-            data-plasmic-override={overrides.pageBanner}
-            className={classNames(projectcss.all, sty.pageBanner)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__tdLwu)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns___4HWsn)}
-              >
-                <div className={classNames(projectcss.all, sty.column__vcXuH)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__dm1Th)}
+          <div className={classNames(projectcss.all, sty.freeBox__ulvCj)} />
+        </div>
+        <div
+          data-plasmic-name={"pageBanner"}
+          data-plasmic-override={overrides.pageBanner}
+          className={classNames(projectcss.all, sty.pageBanner)}
+        >
+          <div className={classNames(projectcss.all, sty.freeBox__tdLwu)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns___4HWsn)}
+            >
+              <div className={classNames(projectcss.all, sty.column__vcXuH)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__dm1Th)}
+                >
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
                   >
-                    <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1
-                      )}
-                    >
-                      {"Contact Us"}
-                    </h1>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ltBsW
-                      )}
-                    >
-                      {
-                        "By becoming our importer, you can source high-quality chips from different countries around the world, including Indonesia, where traditional chips are a popular snack. By importing these unique and exotic chips, you can offer your customers a wide variety of flavors and textures that they might not be able to find elsewhere.\n\nTo start your own exotic chips import business, you'll need to contact us as potential suppliers. It's important to find reliable suppliers who can provide you with high-quality chips at a reasonable price. You'll find Chipsia can be Reliable Exotic Chips Business Partners"
-                      }
-                    </div>
-                  </p.Stack>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__fOs0N)}>
-                  <p.PlasmicImg
-                    data-plasmic-name={"img"}
-                    data-plasmic-override={overrides.img}
-                    alt={""}
-                    className={classNames(sty.img)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("100%" as const)
-                        : ("100%" as const)
+                    {"Contact Us"}
+                  </h1>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ltBsW
+                    )}
+                  >
+                    {
+                      "By becoming our importer, you can source high-quality chips from different countries around the world, including Indonesia, where traditional chips are a popular snack. By importing these unique and exotic chips, you can offer your customers a wide variety of flavors and textures that they might not be able to find elsewhere.\n\nTo start your own exotic chips import business, you'll need to contact us as potential suppliers. It's important to find reliable suppliers who can provide you with high-quality chips at a reasonable price. You'll find Chipsia can be Reliable Exotic Chips Business Partners"
                     }
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("lazy" as const)
-                        : ("lazy" as const)
-                    }
-                    src={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? {
-                            src: "/plasmic/chipsia/images/image7.jpg",
-                            fullWidth: 1920,
-                            fullHeight: 1280,
-                            aspectRatio: undefined
-                          }
-                        : {
-                            src: "/plasmic/chipsia/images/empingTraditionalMakingProcessjpg.jpg",
-                            fullWidth: 1024,
-                            fullHeight: 768,
-                            aspectRatio: undefined
-                          }
-                    }
-                  />
-                </div>
-              </p.Stack>
-            </div>
-          </div>
-          <div
-            data-plasmic-name={"mainSection"}
-            data-plasmic-override={overrides.mainSection}
-            className={classNames(projectcss.all, sty.mainSection)}
-          >
-            <div className={classNames(projectcss.all, sty.columns__hjk9O)}>
-              <div className={classNames(projectcss.all, sty.column__g2LPn)}>
-                <Embed
-                  data-plasmic-name={"embedHtml"}
-                  data-plasmic-override={overrides.embedHtml}
-                  className={classNames("__wab_instance", sty.embedHtml)}
-                  code={
-                    '<iframe class="airtable-embed" src="https://airtable.com/embed/shrVzdPoxEugEUsMF?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>' as const
+                  </div>
+                </p.Stack>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__fOs0N)}>
+                <p.PlasmicImg
+                  data-plasmic-name={"img"}
+                  data-plasmic-override={overrides.img}
+                  alt={""}
+                  className={classNames(sty.img)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("100%" as const)
+                      : ("100%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("lazy" as const)
+                      : ("lazy" as const)
+                  }
+                  src={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? {
+                          src: "/plasmic/chipsia/images/image7.jpg",
+                          fullWidth: 1920,
+                          fullHeight: 1280,
+                          aspectRatio: undefined
+                        }
+                      : {
+                          src: "/plasmic/chipsia/images/empingTraditionalMakingProcessjpg.jpg",
+                          fullWidth: 1024,
+                          fullHeight: 768,
+                          aspectRatio: undefined
+                        }
                   }
                 />
               </div>
+            </p.Stack>
+          </div>
+        </div>
+        <div
+          data-plasmic-name={"mainSection"}
+          data-plasmic-override={overrides.mainSection}
+          className={classNames(projectcss.all, sty.mainSection)}
+        >
+          <div className={classNames(projectcss.all, sty.columns__hjk9O)}>
+            <div className={classNames(projectcss.all, sty.column__g2LPn)}>
+              <Embed
+                data-plasmic-name={"embedHtml"}
+                data-plasmic-override={overrides.embedHtml}
+                className={classNames("__wab_instance", sty.embedHtml)}
+                code={
+                  '<iframe class="airtable-embed" src="https://airtable.com/embed/shrVzdPoxEugEUsMF?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>' as const
+                }
+              />
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__yzZfC)}>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__yzZfC)}>
+          <div
+            data-plasmic-name={"footerTop"}
+            data-plasmic-override={overrides.footerTop}
+            className={classNames(projectcss.all, sty.footerTop)}
+          >
             <div
-              data-plasmic-name={"footerTop"}
-              data-plasmic-override={overrides.footerTop}
-              className={classNames(projectcss.all, sty.footerTop)}
+              data-plasmic-name={"container"}
+              data-plasmic-override={overrides.container}
+              className={classNames(projectcss.all, sty.container)}
             >
-              <div
-                data-plasmic-name={"container"}
-                data-plasmic-override={overrides.container}
-                className={classNames(projectcss.all, sty.container)}
-              >
-                <div className={classNames(projectcss.all, sty.columns__gOZtY)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.column__yBlxN)}
-                  >
-                    <LogoChipsiasvgIcon
-                      data-plasmic-name={"svg"}
-                      data-plasmic-override={overrides.svg}
-                      className={classNames(projectcss.all, sty.svg)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__to8E
-                      )}
-                    >
-                      {
-                        "Chipsia Are Trusted Tempeh Chips, Cassava Chips, Emping Chips and Banana Chips Exporters"
-                      }
-                    </div>
-                  </p.Stack>
-                  <div
-                    className={classNames(projectcss.all, sty.column__zrXdy)}
-                  >
-                    <h5
-                      data-plasmic-name={"h5"}
-                      data-plasmic-override={overrides.h5}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h5,
-                        projectcss.__wab_text,
-                        sty.h5
-                      )}
-                    >
-                      {"Menu"}
-                    </h5>
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__m026G
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Privacy Policy"}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link___3XAdg
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Terms of Service"}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__y9Tgw
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Pricing "}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__hQsyf
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Contact"}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link___11Z9U
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Blog"}
-                    </p.PlasmicLink>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"footerBottom"}
-              data-plasmic-override={overrides.footerBottom}
-              className={classNames(projectcss.all, sty.footerBottom)}
-            >
-              <div
-                data-plasmic-name={"container2"}
-                data-plasmic-override={overrides.container2}
-                className={classNames(projectcss.all, sty.container2)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nrcN0
-                  )}
+              <div className={classNames(projectcss.all, sty.columns__gOZtY)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.column__yBlxN)}
                 >
-                  {
-                    "\u00a9 Chipsia. All rights reserved. This site proudly built by Ade Tias ( Koncoweb )"
-                  }
+                  <LogoChipsiasvgIcon
+                    data-plasmic-name={"svg"}
+                    data-plasmic-override={overrides.svg}
+                    className={classNames(projectcss.all, sty.svg)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__to8E
+                    )}
+                  >
+                    {
+                      "Chipsia Are Trusted Tempeh Chips, Cassava Chips, Emping Chips and Banana Chips Exporters"
+                    }
+                  </div>
+                </p.Stack>
+                <div className={classNames(projectcss.all, sty.column__zrXdy)}>
+                  <h5
+                    data-plasmic-name={"h5"}
+                    data-plasmic-override={overrides.h5}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h5,
+                      projectcss.__wab_text,
+                      sty.h5
+                    )}
+                  >
+                    {"Menu"}
+                  </h5>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__m026G
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Privacy Policy"}
+                  </p.PlasmicLink>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link___3XAdg
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Terms of Service"}
+                  </p.PlasmicLink>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__y9Tgw
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Pricing "}
+                  </p.PlasmicLink>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__hQsyf
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Contact"}
+                  </p.PlasmicLink>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link___11Z9U
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Blog"}
+                  </p.PlasmicLink>
                 </div>
               </div>
             </div>
           </div>
-        </p.Stack>
-      </div>
+          <div
+            data-plasmic-name={"footerBottom"}
+            data-plasmic-override={overrides.footerBottom}
+            className={classNames(projectcss.all, sty.footerBottom)}
+          >
+            <div
+              data-plasmic-name={"container2"}
+              data-plasmic-override={overrides.container2}
+              className={classNames(projectcss.all, sty.container2)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nrcN0
+                )}
+              >
+                {
+                  "\u00a9 Chipsia. All rights reserved. This site proudly built by Ade Tias ( Koncoweb )"
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </p.Stack>
     </React.Fragment>
   ) as React.ReactElement | null;
 }

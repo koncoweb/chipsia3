@@ -201,6 +201,7 @@
   user-select: text;
   text-decoration-line: none;
   text-overflow: clip;
+  padding-right: 0px;
   margin: 0px 0px 0.75em;
 }
 .link___7S3Pz {

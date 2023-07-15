@@ -39,6 +39,11 @@
   margin-bottom: 0px;
   padding: 32px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .section__kLx7S {
+    align-items: stretch;
+  }
+}
 .container4 {
   max-width: 1024px;
   display: flex;
@@ -68,6 +73,19 @@
   > img {
   margin-left: 0px;
   margin-top: var(--token-Kzvu_5ZcCKzb);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .container4 {
+    max-width: none;
+    width: 100%;
+    min-width: 0;
+    padding: 0px 20px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .container4 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
 .productNameH1 {
   position: relative;

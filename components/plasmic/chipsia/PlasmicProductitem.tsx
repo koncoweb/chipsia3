@@ -1103,7 +1103,7 @@ function PlasmicProductitem__RenderFunc(props: {
                       showEndIcon={true}
                       submitsForm={true}
                     >
-                      {"See more"}
+                      {" more"}
                     </Button>
                   </div>
                 ),

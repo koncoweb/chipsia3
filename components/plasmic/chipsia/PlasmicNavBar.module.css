@@ -32,6 +32,10 @@
   min-width: 0;
   min-height: 0;
 }
+.text__xmpB {
+  font-size: 12px;
+  display: none;
+}
 .svg__zE7Em {
   position: relative;
   object-fit: cover;

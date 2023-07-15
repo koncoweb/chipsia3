@@ -92,8 +92,6 @@ export type PlasmicArticles__OverridesType = {
   productCard3?: p.Flex<typeof ProductCard>;
   article?: p.Flex<"article">;
   rating?: p.Flex<typeof Rating>;
-  emojiValueProps?: p.Flex<typeof EmojiValueProps>;
-  columns?: p.Flex<"div">;
   whybanner?: p.Flex<"section">;
   container42?: p.Flex<"div">;
   container5?: p.Flex<"div">;
@@ -103,19 +101,8 @@ export type PlasmicArticles__OverridesType = {
   productCard7?: p.Flex<typeof ProductCard>;
   productCard8?: p.Flex<typeof ProductCard>;
   productCard9?: p.Flex<typeof ProductCard>;
-  container6?: p.Flex<"div">;
-  productCard10?: p.Flex<typeof ProductCard>;
-  productCard11?: p.Flex<typeof ProductCard>;
-  productCard12?: p.Flex<typeof ProductCard>;
-  productCard13?: p.Flex<typeof ProductCard>;
-  productCard14?: p.Flex<typeof ProductCard>;
-  productCard15?: p.Flex<typeof ProductCard>;
-  productCard16?: p.Flex<typeof ProductCard>;
-  productCard17?: p.Flex<typeof ProductCard>;
-  productCard18?: p.Flex<typeof ProductCard>;
-  productCard19?: p.Flex<typeof ProductCard>;
-  productCard20?: p.Flex<typeof ProductCard>;
-  productCard21?: p.Flex<typeof ProductCard>;
+  emojiValueProps?: p.Flex<typeof EmojiValueProps>;
+  columns?: p.Flex<"div">;
   container433?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
 };
@@ -199,78 +186,6 @@ function PlasmicArticles__RenderFunc(props: {
       },
       {
         path: "productCard9.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard10.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard11.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard12.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard13.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard14.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard15.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard16.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard17.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard18.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard19.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard20.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard21.entryidvar",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
@@ -413,921 +328,417 @@ function PlasmicArticles__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__sglks)}
           >
-            {(
-              (() => {
-                try {
-                  return $queries.queryAllArticlesContentfull.data.response
-                    .items;
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return [];
-                  }
-                  throw e;
-                }
-              })() ?? []
-            ).map((currentItem, currentIndex) => (
-              <LoadingBoundary
-                data-plasmic-name={"loadingboundaryartikel"}
-                data-plasmic-override={overrides.loadingboundaryartikel}
-                className={classNames(
-                  "__wab_instance",
-                  sty.loadingboundaryartikel
-                )}
-                key={currentIndex}
-                loadingState={
-                  <ph.DataCtxReader>
-                    {$ctx => (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__uExiD
-                        )}
-                      >
-                        {"Loading..."}
-                      </div>
-                    )}
-                  </ph.DataCtxReader>
-                }
-              >
+            <LoadingBoundary
+              data-plasmic-name={"loadingboundaryartikel"}
+              data-plasmic-override={overrides.loadingboundaryartikel}
+              className={classNames(
+                "__wab_instance",
+                sty.loadingboundaryartikel
+              )}
+              loadingState={
                 <ph.DataCtxReader>
-                  {$ctx =>
-                    (() => {
-                      try {
-                        return $queries.queryAllArticlesContentfull.data
-                          .statusCode;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return true;
-                        }
-                        throw e;
-                      }
-                    })() ? (
-                      <ProductCard
-                        data-plasmic-name={"productCard3"}
-                        data-plasmic-override={overrides.productCard3}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.productCard3
-                        )}
-                        img={(() => {
+                  {$ctx => (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__uExiD
+                      )}
+                    >
+                      <React.Fragment>
+                        {(() => {
                           try {
-                            return $queries.queryAllArticlesContentfull.data
-                              .response.includes.Asset[currentIndex].fields.file
-                              .url;
+                            return "load latest articles & news... ";
                           } catch (e) {
                             if (
                               e instanceof TypeError ||
                               e?.plasmicType === "PlasmicUndefinedDataError"
                             ) {
-                              return "https://site-assets.plasmic.app/2ac568871cd64562b22f222fb9c568e6.jpg";
+                              return "Loading...";
                             }
                             throw e;
                           }
                         })()}
-                        link={`/articles/${(() => {
+                      </React.Fragment>
+                    </div>
+                  )}
+                </ph.DataCtxReader>
+              }
+            >
+              <ph.DataCtxReader>
+                {$ctx =>
+                  (() => {
+                    try {
+                      return $queries.queryAllArticlesContentfull.data
+                        .statusCode;
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return true;
+                      }
+                      throw e;
+                    }
+                  })()
+                    ? (
+                        (() => {
                           try {
-                            return currentItem.fields.slug;
+                            return $queries.queryAllArticlesContentfull.data
+                              .response.items;
                           } catch (e) {
                             if (
                               e instanceof TypeError ||
                               e?.plasmicType === "PlasmicUndefinedDataError"
                             ) {
-                              return undefined;
+                              return [];
                             }
                             throw e;
                           }
-                        })()}-${(() => {
-                          try {
-                            return currentItem.sys.id;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return undefined;
+                        })() ?? []
+                      ).map((currentItem, currentIndex) => (
+                        <ProductCard
+                          data-plasmic-name={"productCard3"}
+                          data-plasmic-override={overrides.productCard3}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.productCard3
+                          )}
+                          img={(() => {
+                            try {
+                              return $queries.queryAllArticlesContentfull.data
+                                .response.includes.Asset[currentIndex].fields
+                                .file.url;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return "https://site-assets.plasmic.app/2ac568871cd64562b22f222fb9c568e6.jpg";
+                              }
+                              throw e;
                             }
-                            throw e;
+                          })()}
+                          key={currentIndex}
+                          link={`/articles/${(() => {
+                            try {
+                              return currentItem.fields.slug;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}-${(() => {
+                            try {
+                              return currentItem.sys.id;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}`}
+                          onEntryidvarChange={p.generateStateOnChangeProp(
+                            $state,
+                            ["productCard3", currentIndex, "entryidvar"]
+                          )}
+                          rating={
+                            <Rating
+                              data-plasmic-name={"rating"}
+                              data-plasmic-override={overrides.rating}
+                              className={classNames(
+                                "__wab_instance",
+                                sty.rating
+                              )}
+                              rating={"four" as const}
+                            />
                           }
-                        })()}`}
-                        onEntryidvarChange={p.generateStateOnChangeProp(
-                          $state,
-                          ["productCard3", currentIndex, "entryidvar"]
-                        )}
-                        rating={
-                          <Rating
-                            data-plasmic-name={"rating"}
-                            data-plasmic-override={overrides.rating}
-                            className={classNames("__wab_instance", sty.rating)}
-                            rating={"four" as const}
-                          />
-                        }
-                        tags={
-                          <Button
-                            colors={"lightGray" as const}
-                            size={"small" as const}
-                            submitsForm={true}
+                          tags={
+                            <Button
+                              colors={"lightGray" as const}
+                              size={"small" as const}
+                              submitsForm={true}
+                            >
+                              <React.Fragment>
+                                {(() => {
+                                  try {
+                                    return currentItem.fields.kategori;
+                                  } catch (e) {
+                                    if (
+                                      e instanceof TypeError ||
+                                      e?.plasmicType ===
+                                        "PlasmicUndefinedDataError"
+                                    ) {
+                                      return "Best Seller";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </React.Fragment>
+                            </Button>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sXqLr
+                            )}
                           >
                             <React.Fragment>
                               {(() => {
                                 try {
-                                  return currentItem.fields.kategori;
+                                  return undefined;
                                 } catch (e) {
                                   if (
                                     e instanceof TypeError ||
                                     e?.plasmicType ===
                                       "PlasmicUndefinedDataError"
                                   ) {
-                                    return "Best Seller";
+                                    return "TEMPEH CHIPS      ";
                                   }
                                   throw e;
                                 }
                               })()}
                             </React.Fragment>
-                          </Button>
-                        }
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__sXqLr
-                          )}
-                        >
-                          <React.Fragment>
-                            {(() => {
-                              try {
-                                return undefined;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return "TEMPEH CHIPS      ";
+                          </div>
+                          <h2
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h2,
+                              projectcss.__wab_text,
+                              sty.h2__g0IZj
+                            )}
+                          >
+                            <React.Fragment>
+                              {(() => {
+                                try {
+                                  return currentItem.fields.judul;
+                                } catch (e) {
+                                  if (
+                                    e instanceof TypeError ||
+                                    e?.plasmicType ===
+                                      "PlasmicUndefinedDataError"
+                                  ) {
+                                    return "Healthy Vegan Tempeh Chips Original Indonesia";
+                                  }
+                                  throw e;
                                 }
-                                throw e;
-                              }
-                            })()}
-                          </React.Fragment>
-                        </div>
-                        <h2
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h2,
-                            projectcss.__wab_text,
-                            sty.h2__g0IZj
-                          )}
-                        >
-                          <React.Fragment>
-                            {(() => {
-                              try {
-                                return currentItem.fields.judul;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return "Healthy Vegan Tempeh Chips Original Indonesia";
+                              })()}
+                            </React.Fragment>
+                          </h2>
+                          <article
+                            data-plasmic-name={"article"}
+                            data-plasmic-override={overrides.article}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.article
+                            )}
+                          >
+                            <React.Fragment>
+                              {(() => {
+                                try {
+                                  return currentItem.fields.deskripsiSeo;
+                                } catch (e) {
+                                  if (
+                                    e instanceof TypeError ||
+                                    e?.plasmicType ===
+                                      "PlasmicUndefinedDataError"
+                                  ) {
+                                    return "";
+                                  }
+                                  throw e;
                                 }
-                                throw e;
-                              }
-                            })()}
-                          </React.Fragment>
-                        </h2>
-                        <article
-                          data-plasmic-name={"article"}
-                          data-plasmic-override={overrides.article}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.article
-                          )}
-                        >
-                          <React.Fragment>
-                            {(() => {
-                              try {
-                                return currentItem.fields.deskripsiSeo;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return "";
-                                }
-                                throw e;
-                              }
-                            })()}
-                          </React.Fragment>
-                        </article>
-                      </ProductCard>
-                    ) : null
-                  }
-                </ph.DataCtxReader>
-              </LoadingBoundary>
-            ))}
+                              })()}
+                            </React.Fragment>
+                          </article>
+                        </ProductCard>
+                      ))
+                    : null
+                }
+              </ph.DataCtxReader>
+            </LoadingBoundary>
           </p.Stack>
         </section>
-        <section className={classNames(projectcss.all, sty.section__abcku)}>
-          <div className={classNames(projectcss.all, sty.freeBox___04V5I)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__ggHH
-              )}
-            >
-              {
-                "Discover the World of Indonesian Chips with Chipsia\n\nWelcome to Chipsia\u2019s news and articles page, where you\u2019ll find all the latest information about our delicious Indonesian chips. We specialize in a variety of traditional snacks, including tempeh chips, emping chips, cassava chips, and banana chips.\n\n"
-              }
-            </div>
-          </div>
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox___18R4X)}
-          >
+        {true ? (
+          <section className={classNames(projectcss.all, sty.section__abcku)}>
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__zyRo9)}
+              className={classNames(projectcss.all, sty.freeBox___18R4X)}
             >
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___5Hb9X)}
-              >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__fvqw
-                  )}
-                >
-                  {
-                    "Chipsia is Committed to Becoming the Best Traditional Indonesian snack Exporter "
-                  }
-                </h2>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__p8OQ
-                  )}
-                >
-                  {
-                    "Chipsia Are Trusted Tempeh Chips, Cassava Chips, Emping Chips and Banana Chips Exporters"
-                  }
-                </div>
-              </p.Stack>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___0Ne7X)}
-              >
-                {true ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__hiQ
-                    )}
-                  >
-                    <React.Fragment>
-                      <React.Fragment>{"3 "}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontStyle: "italic" }}
-                      >
-                        {"for"}
-                      </span>
-                      <React.Fragment>{" $169"}</React.Fragment>
-                    </React.Fragment>
-                  </div>
-                ) : null}
-                <Button
-                  colors={"black" as const}
-                  endIcon={
-                    <RightArrowIcon
-                      className={classNames(projectcss.all, sty.svg__fjagw)}
-                      role={"img"}
-                    />
-                  }
-                  rounded={true}
-                  showEndIcon={true}
-                  size={"large" as const}
-                  submitsForm={true}
-                >
-                  {"Shop sale"}
-                </Button>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
-        </section>
-        <EmojiValueProps
-          data-plasmic-name={"emojiValueProps"}
-          data-plasmic-override={overrides.emojiValueProps}
-          className={classNames("__wab_instance", sty.emojiValueProps)}
-        >
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"columns"}
-            data-plasmic-override={overrides.columns}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns)}
-          >
-            <div className={classNames(projectcss.all, sty.column__ysvqu)}>
-              <Value
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button__brIkB)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__uVxSy)}
-                        role={"img"}
-                      />
-                    }
-                    rounded={true}
-                    size={"large" as const}
-                    submitsForm={true}
-                  >
-                    {"Read our letter"}
-                  </Button>
-                }
-                className={classNames("__wab_instance", sty.value___5AgIc)}
-                icon={
-                  <PlaneIcon
-                    className={classNames(projectcss.all, sty.svg__mqYuK)}
-                    role={"img"}
-                  />
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__qHOwP
-                  )}
-                >
-                  {"worldwide shipping to any country"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gqGkp
-                  )}
-                >
-                  {
-                    "We are Ready to Ship all of our products Worldwide by land, sea, and air. our packaging guarantee product is in prime quality after you received "
-                  }
-                </div>
-              </Value>
-            </div>
-            <div className={classNames(projectcss.all, sty.column__ldjaF)}>
-              <Value
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button__iUot3)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__rZpdu)}
-                        role={"img"}
-                      />
-                    }
-                    rounded={true}
-                    size={"large" as const}
-                    submitsForm={true}
-                  >
-                    {"Read our letter"}
-                  </Button>
-                }
-                className={classNames("__wab_instance", sty.value___7Lm9Q)}
-                icon={
-                  <DocumentIcon
-                    className={classNames(projectcss.all, sty.svg__zttlg)}
-                    role={"img"}
-                  />
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__n5Aht
-                  )}
-                >
-                  {"Your satisfaction guaranteed"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vw8Wr
-                  )}
-                >
-                  {
-                    "Our export process is professional so you do not have to worry about product quality, we are experienced in the export process"
-                  }
-                </div>
-              </Value>
-            </div>
-            <div className={classNames(projectcss.all, sty.column__jyxsj)}>
-              <Value
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button__oo0QA)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__uJqqL)}
-                        role={"img"}
-                      />
-                    }
-                    rounded={true}
-                    size={"large" as const}
-                    submitsForm={true}
-                  >
-                    {"Read our letter"}
-                  </Button>
-                }
-                className={classNames("__wab_instance", sty.value__vPaJl)}
-                icon={
-                  <LockIcon
-                    className={classNames(projectcss.all, sty.svg__tunKs)}
-                    role={"img"}
-                  />
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gvo3
-                  )}
-                >
-                  {"Secure and easy payments process"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__bTa2X
-                  )}
-                >
-                  {
-                    "Don't worry about payment, we accept many forms of international payment so you can fulfill your demand without the high cost"
-                  }
-                </div>
-              </Value>
-            </div>
-          </p.Stack>
-        </EmojiValueProps>
-        <section
-          data-plasmic-name={"whybanner"}
-          data-plasmic-override={overrides.whybanner}
-          className={classNames(projectcss.all, sty.whybanner)}
-        >
-          <div
-            data-plasmic-name={"container42"}
-            data-plasmic-override={overrides.container42}
-            className={classNames(projectcss.all, sty.container42)}
-          >
-            {p.renderPlasmicSlot({
-              defaultContents: (
-                <div className={classNames(projectcss.all, sty.freeBox__oMZoV)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__k5Yf9
-                    )}
-                  >
-                    {"Why Import From Us ?"}
-                  </div>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__l0NMn)}
-                    colors={"link" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__fqK7Q)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/product/why-choose-chipsia`}
-                    showEndIcon={true}
-                    submitsForm={true}
-                  >
-                    {"See more"}
-                  </Button>
-                </div>
-              ),
-              value: args.container42
-            })}
-          </div>
-          <div
-            data-plasmic-name={"container5"}
-            data-plasmic-override={overrides.container5}
-            className={classNames(projectcss.all, sty.container5)}
-          >
-            {true ? (
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__pGyUb)}
-              >
-                <ProductCard
-                  data-plasmic-name={"productCard4"}
-                  data-plasmic-override={overrides.productCard4}
-                  img={{
-                    src: "/plasmic/chipsia/images/shoe14.png",
-                    fullWidth: 840,
-                    fullHeight: 840,
-                    aspectRatio: undefined
-                  }}
-                  onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                    "productCard4",
-                    "entryidvar"
-                  ])}
-                  tags={
-                    <Button
-                      colors={"lightGray" as const}
-                      size={"small" as const}
-                      submitsForm={true}
-                    >
-                      {"New"}
-                    </Button>
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yk3Jh
-                    )}
-                  >
-                    {"ADIDAS ULTRABOOST DNA X LEGO\u00ae PLATES SHOES"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bOFut
-                    )}
-                  >
-                    {"If you can dream it, you can build it."}
-                  </div>
-                </ProductCard>
-                <ProductCard
-                  data-plasmic-name={"productCard5"}
-                  data-plasmic-override={overrides.productCard5}
-                  className={classNames("__wab_instance", sty.productCard5)}
-                  img={{
-                    src: "/plasmic/chipsia/images/shoe15.png",
-                    fullWidth: 864,
-                    fullHeight: 1080,
-                    aspectRatio: undefined
-                  }}
-                  onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                    "productCard5",
-                    "entryidvar"
-                  ])}
-                  tags={
-                    <Button
-                      colors={"lightGray" as const}
-                      size={"small" as const}
-                      submitsForm={true}
-                    >
-                      {"New"}
-                    </Button>
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xv0GH
-                    )}
-                  >
-                    {"Nike Air Zoom Pegasus 38"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__jq4Fu
-                    )}
-                  >
-                    {"If you can dream it, you can build it."}
-                  </div>
-                </ProductCard>
-                <ProductCard
-                  data-plasmic-name={"productCard6"}
-                  data-plasmic-override={overrides.productCard6}
-                  className={classNames("__wab_instance", sty.productCard6)}
-                  img={{
-                    src: "/plasmic/chipsia/images/shoe16.png",
-                    fullWidth: 840,
-                    fullHeight: 840,
-                    aspectRatio: undefined
-                  }}
-                  onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                    "productCard6",
-                    "entryidvar"
-                  ])}
-                  tags={
-                    <Button
-                      colors={"lightGray" as const}
-                      size={"small" as const}
-                      submitsForm={true}
-                    >
-                      {"New"}
-                    </Button>
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dS7Hd
-                    )}
-                  >
-                    {"Club C 85 Vintage Men's Shoes"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___9SZgg
-                    )}
-                  >
-                    {"If you can dream it, you can build it."}
-                  </div>
-                </ProductCard>
-                <ProductCard
-                  data-plasmic-name={"productCard7"}
-                  data-plasmic-override={overrides.productCard7}
-                  className={classNames("__wab_instance", sty.productCard7)}
-                  img={{
-                    src: "/plasmic/chipsia/images/shoe17.png",
-                    fullWidth: 864,
-                    fullHeight: 1080,
-                    aspectRatio: undefined
-                  }}
-                  onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                    "productCard7",
-                    "entryidvar"
-                  ])}
-                  tags={
-                    <Button
-                      colors={"lightGray" as const}
-                      size={"small" as const}
-                      submitsForm={true}
-                    >
-                      {"New"}
-                    </Button>
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__u5DVv
-                    )}
-                  >
-                    {"Nike Air Max Genome"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fANwm
-                    )}
-                  >
-                    {"If you can dream it, you can build it."}
-                  </div>
-                </ProductCard>
-                <ProductCard
-                  data-plasmic-name={"productCard8"}
-                  data-plasmic-override={overrides.productCard8}
-                  className={classNames("__wab_instance", sty.productCard8)}
-                  img={{
-                    src: "/plasmic/chipsia/images/shoe18.png",
-                    fullWidth: 840,
-                    fullHeight: 840,
-                    aspectRatio: undefined
-                  }}
-                  onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                    "productCard8",
-                    "entryidvar"
-                  ])}
-                  tags={
-                    <Button
-                      colors={"lightGray" as const}
-                      size={"small" as const}
-                      submitsForm={true}
-                    >
-                      {"New"}
-                    </Button>
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__rRg2O
-                    )}
-                  >
-                    {"ULTRABOOST DNA 1.0 SHOES"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__nu61D
-                    )}
-                  >
-                    {"If you can dream it, you can build it."}
-                  </div>
-                </ProductCard>
-                <ProductCard
-                  data-plasmic-name={"productCard9"}
-                  data-plasmic-override={overrides.productCard9}
-                  className={classNames("__wab_instance", sty.productCard9)}
-                  img={{
-                    src: "/plasmic/chipsia/images/shoe19.png",
-                    fullWidth: 864,
-                    fullHeight: 1080,
-                    aspectRatio: undefined
-                  }}
-                  onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                    "productCard9",
-                    "entryidvar"
-                  ])}
-                  tags={
-                    <Button
-                      colors={"lightGray" as const}
-                      size={"small" as const}
-                      submitsForm={true}
-                    >
-                      {"New"}
-                    </Button>
-                  }
-                />
-              </p.Stack>
-            ) : null}
-          </div>
-        </section>
-        {true ? (
-          <section className={classNames(projectcss.all, sty.section__dbtjn)}>
-            {true ? (
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"container6"}
-                data-plasmic-override={overrides.container6}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.container6)}
+                className={classNames(projectcss.all, sty.freeBox__zyRo9)}
               >
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__eKlk1)}
+                  className={classNames(projectcss.all, sty.freeBox___5Hb9X)}
                 >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__fvqw
+                    )}
+                  >
+                    {
+                      "Chipsia is Committed to Becoming the Best Traditional Indonesian snack Exporter "
+                    }
+                  </h2>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___5OHlR
+                      sty.text__p8OQ
                     )}
                   >
-                    {"Categories"}
+                    {
+                      "Chipsia Are Trusted Tempeh Chips, Cassava Chips, Emping Chips and Banana Chips Exporters"
+                    }
                   </div>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__dsFmm)}
-                    states={"active" as const}
-                    submitsForm={true}
-                  >
+                </p.Stack>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ggHH
+                  )}
+                >
+                  {
+                    "Discover the World of Indonesian Chips with Chipsia\n\nWelcome to Chipsia\u2019s news and articles page, where you\u2019ll find all the latest information about our delicious Indonesian chips. We specialize in a variety of traditional snacks, including tempeh chips, emping chips, cassava chips, and banana chips.\n\n"
+                  }
+                </div>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___0Ne7X)}
+                >
+                  {true ? (
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__dWoQy
+                        sty.text__hiQ
                       )}
                     >
-                      {"All"}
+                      <React.Fragment>
+                        <React.Fragment>{"3 "}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontStyle: "italic" }}
+                        >
+                          {"for"}
+                        </span>
+                        <React.Fragment>{" $169"}</React.Fragment>
+                      </React.Fragment>
                     </div>
-                  </Button>
+                  ) : null}
                   <Button
-                    className={classNames("__wab_instance", sty.button__msAhS)}
+                    colors={"black" as const}
+                    endIcon={
+                      <RightArrowIcon
+                        className={classNames(projectcss.all, sty.svg__fjagw)}
+                        role={"img"}
+                      />
+                    }
+                    rounded={true}
+                    showEndIcon={true}
+                    size={"large" as const}
                     submitsForm={true}
                   >
-                    {"New"}
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__jBwD)}
-                    submitsForm={true}
-                  >
-                    {"Womens"}
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__jjfum)}
-                    submitsForm={true}
-                  >
-                    {"Mens"}
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__y4LHj)}
-                    submitsForm={true}
-                  >
-                    {"Kids"}
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__xtjsk)}
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__dxNtq
-                      )}
-                    >
-                      {"On sale"}
-                    </div>
+                    {"Shop sale"}
                   </Button>
                 </p.Stack>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__okRux)}
-                >
-                  <ProductCard
-                    data-plasmic-name={"productCard10"}
-                    data-plasmic-override={overrides.productCard10}
-                    className={classNames("__wab_instance", sty.productCard10)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe8.png",
-                      fullWidth: 864,
-                      fullHeight: 1080,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard10",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
+              </p.Stack>
+            </p.Stack>
+          </section>
+        ) : null}
+        {true ? (
+          <section
+            data-plasmic-name={"whybanner"}
+            data-plasmic-override={overrides.whybanner}
+            className={classNames(projectcss.all, sty.whybanner)}
+          >
+            <div
+              data-plasmic-name={"container42"}
+              data-plasmic-override={overrides.container42}
+              className={classNames(projectcss.all, sty.container42)}
+            >
+              {p.renderPlasmicSlot({
+                defaultContents: (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__oMZoV)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__sPdGv
+                        sty.text__k5Yf9
                       )}
                     >
-                      {"Nike Air Zoom Pegasus 38 Limited Edition"}
+                      {"Why Import From Us ?"}
                     </div>
-                    <div
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mi9Ub
+                        "__wab_instance",
+                        sty.button__l0NMn
                       )}
+                      colors={"link" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__fqK7Q)}
+                          role={"img"}
+                        />
+                      }
+                      link={`/product/why-choose-chipsia`}
+                      showEndIcon={true}
+                      submitsForm={true}
                     >
-                      {"Women's Running Shoe"}
-                    </div>
-                  </ProductCard>
+                      {"See more"}
+                    </Button>
+                  </div>
+                ),
+                value: args.container42
+              })}
+            </div>
+            <div
+              data-plasmic-name={"container5"}
+              data-plasmic-override={overrides.container5}
+              className={classNames(projectcss.all, sty.container5)}
+            >
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__pGyUb)}
+                >
                   <ProductCard
-                    data-plasmic-name={"productCard11"}
-                    data-plasmic-override={overrides.productCard11}
-                    className={classNames("__wab_instance", sty.productCard11)}
+                    data-plasmic-name={"productCard4"}
+                    data-plasmic-override={overrides.productCard4}
                     img={{
-                      src: "/plasmic/chipsia/images/shoe7.png",
+                      src: "/plasmic/chipsia/images/shoe14.png",
                       fullWidth: 840,
                       fullHeight: 840,
                       aspectRatio: undefined
                     }}
                     onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard11",
+                      "productCard4",
                       "entryidvar"
                     ])}
-                    small={true}
                     tags={
                       <Button
                         colors={"lightGray" as const}
@@ -1342,212 +753,35 @@ function PlasmicArticles__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__ledEu
+                        sty.text__yk3Jh
                       )}
                     >
-                      {"NMD_R1 SHOES"}
+                      {"ADIDAS ULTRABOOST DNA X LEGO\u00ae PLATES SHOES"}
                     </div>
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__d9Zek
-                      )}
-                    >
-                      {"Continue the NMD legacy in these adidas NMD_R1 Shoes."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard12"}
-                    data-plasmic-override={overrides.productCard12}
-                    className={classNames("__wab_instance", sty.productCard12)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe6.png",
-                      fullWidth: 320,
-                      fullHeight: 320,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard12",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__alwVa
-                      )}
-                    >
-                      {"Question Low Men's Basketball Shoes"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___9Df33
-                      )}
-                    >
-                      {"Lace up fierce baller style."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard13"}
-                    data-plasmic-override={overrides.productCard13}
-                    className={classNames("__wab_instance", sty.productCard13)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe5.png",
-                      fullWidth: 2000,
-                      fullHeight: 2000,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard13",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jxqFi
-                      )}
-                    >
-                      {"Cali Women's Sneakers"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kQsQ
-                      )}
-                    >
-                      {"A sport style turned street classic."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard14"}
-                    data-plasmic-override={overrides.productCard14}
-                    className={classNames("__wab_instance", sty.productCard14)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe4.png",
-                      fullWidth: 1024,
-                      fullHeight: 768,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard14",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__aX4Cp
-                      )}
-                    >
-                      {"MAGIC SPEED"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__yt10H
-                      )}
-                    >
-                      {"mMade for racing or regular training runs."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard15"}
-                    data-plasmic-override={overrides.productCard15}
-                    className={classNames("__wab_instance", sty.productCard15)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe3.png",
-                      fullWidth: 964,
-                      fullHeight: 898,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard15",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mfrI
-                      )}
-                    >
-                      {"Pride Chuck Taylor All Star"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0T9F5
+                        sty.text__bOFut
                       )}
                     >
                       {"If you can dream it, you can build it."}
                     </div>
                   </ProductCard>
                   <ProductCard
-                    data-plasmic-name={"productCard16"}
-                    data-plasmic-override={overrides.productCard16}
-                    className={classNames("__wab_instance", sty.productCard16)}
+                    data-plasmic-name={"productCard5"}
+                    data-plasmic-override={overrides.productCard5}
+                    className={classNames("__wab_instance", sty.productCard5)}
                     img={{
-                      src: "/plasmic/chipsia/images/shoe2.png",
+                      src: "/plasmic/chipsia/images/shoe15.png",
                       fullWidth: 864,
                       fullHeight: 1080,
                       aspectRatio: undefined
                     }}
                     onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard16",
+                      "productCard5",
                       "entryidvar"
                     ])}
-                    small={true}
                     tags={
                       <Button
                         colors={"lightGray" as const}
@@ -1562,7 +796,7 @@ function PlasmicArticles__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__u9OHu
+                        sty.text__xv0GH
                       )}
                     >
                       {"Nike Air Zoom Pegasus 38"}
@@ -1571,205 +805,26 @@ function PlasmicArticles__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__f7XKw
+                        sty.text__jq4Fu
                       )}
                     >
-                      {"Your workhorse with wings returns."}
+                      {"If you can dream it, you can build it."}
                     </div>
                   </ProductCard>
                   <ProductCard
-                    data-plasmic-name={"productCard17"}
-                    data-plasmic-override={overrides.productCard17}
-                    className={classNames("__wab_instance", sty.productCard17)}
+                    data-plasmic-name={"productCard6"}
+                    data-plasmic-override={overrides.productCard6}
+                    className={classNames("__wab_instance", sty.productCard6)}
                     img={{
-                      src: "/plasmic/chipsia/images/shoe9.png",
-                      fullWidth: 1024,
-                      fullHeight: 768,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard17",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___1LrSq
-                      )}
-                    >
-                      {"GEL-Nimbus 22 Retro Tokyo"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gJtMl
-                      )}
-                    >
-                      {"Enjoy comfort with each stride."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard18"}
-                    data-plasmic-override={overrides.productCard18}
-                    className={classNames("__wab_instance", sty.productCard18)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe10.png",
-                      fullWidth: 964,
-                      fullHeight: 898,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard18",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bk11B
-                      )}
-                    >
-                      {"A Bug's World Chuck Taylor All Star"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__nbR9V
-                      )}
-                    >
-                      {"Allover glow-in-the-dark bug prints."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard19"}
-                    data-plasmic-override={overrides.productCard19}
-                    className={classNames("__wab_instance", sty.productCard19)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe11.png",
-                      fullWidth: 766,
-                      fullHeight: 766,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard19",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__i8JI
-                      )}
-                    >
-                      {"NMD_R1 SHOES"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bevI1
-                      )}
-                    >
-                      {
-                        "Effortlessly step up your look than a pop of animal print."
-                      }
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard20"}
-                    data-plasmic-override={overrides.productCard20}
-                    className={classNames("__wab_instance", sty.productCard20)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe12.png",
-                      fullWidth: 2000,
-                      fullHeight: 2000,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard20",
-                      "entryidvar"
-                    ])}
-                    small={true}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__goZY
-                      )}
-                    >
-                      {"Suede Teams Little Kids' Shoes"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tjwXe
-                      )}
-                    >
-                      {"Worn by the icons of every generation."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard21"}
-                    data-plasmic-override={overrides.productCard21}
-                    className={classNames("__wab_instance", sty.productCard21)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe13.png",
+                      src: "/plasmic/chipsia/images/shoe16.png",
                       fullWidth: 840,
                       fullHeight: 840,
                       aspectRatio: undefined
                     }}
                     onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard21",
+                      "productCard6",
                       "entryidvar"
                     ])}
-                    small={true}
                     tags={
                       <Button
                         colors={"lightGray" as const}
@@ -1784,262 +839,561 @@ function PlasmicArticles__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__lfCkm
+                        sty.text__dS7Hd
                       )}
                     >
-                      {"SUPERSTAR 360 PRIMEBLUE SANDALS"}
+                      {"Club C 85 Vintage Men's Shoes"}
                     </div>
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__uXiCy
+                        sty.text___9SZgg
                       )}
                     >
-                      {"Your workhorse with wings returns."}
+                      {"If you can dream it, you can build it."}
                     </div>
                   </ProductCard>
+                  <ProductCard
+                    data-plasmic-name={"productCard7"}
+                    data-plasmic-override={overrides.productCard7}
+                    className={classNames("__wab_instance", sty.productCard7)}
+                    img={{
+                      src: "/plasmic/chipsia/images/shoe17.png",
+                      fullWidth: 864,
+                      fullHeight: 1080,
+                      aspectRatio: undefined
+                    }}
+                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
+                      "productCard7",
+                      "entryidvar"
+                    ])}
+                    tags={
+                      <Button
+                        colors={"lightGray" as const}
+                        size={"small" as const}
+                        submitsForm={true}
+                      >
+                        {"New"}
+                      </Button>
+                    }
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__u5DVv
+                      )}
+                    >
+                      {"Nike Air Max Genome"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fANwm
+                      )}
+                    >
+                      {"If you can dream it, you can build it."}
+                    </div>
+                  </ProductCard>
+                  <ProductCard
+                    data-plasmic-name={"productCard8"}
+                    data-plasmic-override={overrides.productCard8}
+                    className={classNames("__wab_instance", sty.productCard8)}
+                    img={{
+                      src: "/plasmic/chipsia/images/shoe18.png",
+                      fullWidth: 840,
+                      fullHeight: 840,
+                      aspectRatio: undefined
+                    }}
+                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
+                      "productCard8",
+                      "entryidvar"
+                    ])}
+                    tags={
+                      <Button
+                        colors={"lightGray" as const}
+                        size={"small" as const}
+                        submitsForm={true}
+                      >
+                        {"New"}
+                      </Button>
+                    }
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__rRg2O
+                      )}
+                    >
+                      {"ULTRABOOST DNA 1.0 SHOES"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__nu61D
+                      )}
+                    >
+                      {"If you can dream it, you can build it."}
+                    </div>
+                  </ProductCard>
+                  <ProductCard
+                    data-plasmic-name={"productCard9"}
+                    data-plasmic-override={overrides.productCard9}
+                    className={classNames("__wab_instance", sty.productCard9)}
+                    img={{
+                      src: "/plasmic/chipsia/images/shoe19.png",
+                      fullWidth: 864,
+                      fullHeight: 1080,
+                      aspectRatio: undefined
+                    }}
+                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
+                      "productCard9",
+                      "entryidvar"
+                    ])}
+                    tags={
+                      <Button
+                        colors={"lightGray" as const}
+                        size={"small" as const}
+                        submitsForm={true}
+                      >
+                        {"New"}
+                      </Button>
+                    }
+                  />
                 </p.Stack>
-              </p.Stack>
-            ) : null}
+              ) : null}
+            </div>
           </section>
         ) : null}
-        <section className={classNames(projectcss.all, sty.section__pFqi)}>
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"container433"}
-            data-plasmic-override={overrides.container433}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.container433)}
+        {true ? (
+          <EmojiValueProps
+            data-plasmic-name={"emojiValueProps"}
+            data-plasmic-override={overrides.emojiValueProps}
+            className={classNames("__wab_instance", sty.emojiValueProps)}
           >
-            <div className={classNames(projectcss.all, sty.column__ngxWa)}>
-              <Value
-                center={true}
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button__drdch)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__nyS9)}
-                        role={"img"}
-                      />
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns)}
+            >
+              <div className={classNames(projectcss.all, sty.column__ysvqu)}>
+                <Value
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__brIkB
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__uVxSy)}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
+                  }
+                  className={classNames("__wab_instance", sty.value___5AgIc)}
+                  icon={
+                    <PlaneIcon
+                      className={classNames(projectcss.all, sty.svg__mqYuK)}
+                      role={"img"}
+                    />
+                  }
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qHOwP
+                    )}
+                  >
+                    {"worldwide shipping to any country"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gqGkp
+                    )}
+                  >
+                    {
+                      "We are Ready to Ship all of our products Worldwide by land, sea, and air. our packaging guarantee product is in prime quality after you received "
                     }
-                    rounded={true}
-                    size={"large" as const}
+                  </div>
+                </Value>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__ldjaF)}>
+                <Value
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__iUot3
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__rZpdu)}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
+                  }
+                  className={classNames("__wab_instance", sty.value___7Lm9Q)}
+                  icon={
+                    <DocumentIcon
+                      className={classNames(projectcss.all, sty.svg__zttlg)}
+                      role={"img"}
+                    />
+                  }
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__n5Aht
+                    )}
+                  >
+                    {"Your satisfaction guaranteed"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vw8Wr
+                    )}
+                  >
+                    {
+                      "Our export process is professional so you do not have to worry about product quality, we are experienced in the export process"
+                    }
+                  </div>
+                </Value>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__jyxsj)}>
+                <Value
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__oo0QA
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__uJqqL)}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
+                  }
+                  className={classNames("__wab_instance", sty.value__vPaJl)}
+                  icon={
+                    <LockIcon
+                      className={classNames(projectcss.all, sty.svg__tunKs)}
+                      role={"img"}
+                    />
+                  }
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gvo3
+                    )}
+                  >
+                    {"Secure and easy payments process"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bTa2X
+                    )}
+                  >
+                    {
+                      "Don't worry about payment, we accept many forms of international payment so you can fulfill your demand without the high cost"
+                    }
+                  </div>
+                </Value>
+              </div>
+            </p.Stack>
+          </EmojiValueProps>
+        ) : null}
+        {true ? (
+          <section className={classNames(projectcss.all, sty.section__pFqi)}>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"container433"}
+              data-plasmic-override={overrides.container433}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.container433)}
+            >
+              <div className={classNames(projectcss.all, sty.column__ngxWa)}>
+                <Value
+                  center={true}
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__drdch
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__nyS9)}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
+                  }
+                  className={classNames("__wab_instance", sty.value__klneQ)}
+                  icon={
+                    <MedalIcon
+                      className={classNames(projectcss.all, sty.svg__crpUe)}
+                      role={"img"}
+                    />
+                  }
+                  topBottom={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gjBl
+                    )}
+                  >
+                    {"We guarantee everything we sell."}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__c8M2T
+                    )}
+                  >
+                    {
+                      "Every product we sell, tempeh chips, banana chips, cassava chips, and emping chips also other products, are made from fresh ingredients with legacy recipes. so you will be satisfied with the product you received"
+                    }
+                  </div>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__ucoou)}
+                    colors={"link" as const}
                     submitsForm={true}
                   >
-                    {"Read our letter"}
+                    {"View guarantee"}
                   </Button>
-                }
-                className={classNames("__wab_instance", sty.value__klneQ)}
-                icon={
-                  <MedalIcon
-                    className={classNames(projectcss.all, sty.svg__crpUe)}
-                    role={"img"}
-                  />
-                }
-                topBottom={true}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gjBl
-                  )}
-                >
-                  {"We guarantee everything we sell."}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__c8M2T
-                  )}
-                >
-                  {
-                    "Every product we sell, tempeh chips, banana chips, cassava chips, and emping chips also other products, are made from fresh ingredients with legacy recipes. so you will be satisfied with the product you received"
+                </Value>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__bJu6P)}>
+                <Value
+                  center={true}
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__yvGfS
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__cFcc4)}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
                   }
-                </div>
-                <Button
-                  className={classNames("__wab_instance", sty.button__ucoou)}
-                  colors={"link" as const}
-                  submitsForm={true}
+                  className={classNames("__wab_instance", sty.value__rlP6D)}
+                  icon={
+                    <LeafIcon
+                      className={classNames(projectcss.all, sty.svg__yxXlh)}
+                      role={"img"}
+                    />
+                  }
+                  topBottom={true}
                 >
-                  {"View guarantee"}
-                </Button>
-              </Value>
-            </div>
-            <div className={classNames(projectcss.all, sty.column__bJu6P)}>
-              <Value
-                center={true}
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button__yvGfS)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__cFcc4)}
-                        role={"img"}
-                      />
-                    }
-                    rounded={true}
-                    size={"large" as const}
-                    submitsForm={true}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xDKen
+                    )}
                   >
-                    {"Read our letter"}
-                  </Button>
-                }
-                className={classNames("__wab_instance", sty.value__rlP6D)}
-                icon={
-                  <LeafIcon
-                    className={classNames(projectcss.all, sty.svg__yxXlh)}
-                    role={"img"}
-                  />
-                }
-                topBottom={true}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__xDKen
-                  )}
-                >
-                  {"100 % organic and Plant based"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___1DWe3
-                  )}
-                >
-                  {
-                    "The market for our product is increasing rapidly in your country. Our chips Product made from fresh and natural plant-based ingredients, so it's healthy and can become an alternative for people who are vegetarian or just want to consume healthy but  tasty snacks"
-                  }
-                </div>
-                <Button
-                  className={classNames("__wab_instance", sty.button___71U1P)}
-                  colors={"link" as const}
-                  submitsForm={true}
-                />
-              </Value>
-            </div>
-            <div className={classNames(projectcss.all, sty.column__r6Lgo)}>
-              <Value
-                center={true}
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button___2U5Sj)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg___3MvOo)}
-                        role={"img"}
-                      />
-                    }
-                    rounded={true}
-                    size={"large" as const}
-                    submitsForm={true}
+                    {"100 % organic and Plant based"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1DWe3
+                    )}
                   >
-                    {"Read our letter"}
-                  </Button>
-                }
-                className={classNames("__wab_instance", sty.value__lDtL8)}
-                icon={
-                  <MoneySvgrepoComsvgIcon
-                    className={classNames(projectcss.all, sty.svg__zgjWe)}
-                    role={"img"}
-                  />
-                }
-                topBottom={true}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__dMWae
-                  )}
-                >
-                  {"Reap High Profit by becoming importer"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__rC5Ny
-                  )}
-                >
-                  {
-                    "Our product is in high demand for the export market, now it's your turn to reap high profit by becoming an importer of our products such as tempeh chips, banana chips, emping chips, and cassava chips in your country "
-                  }
-                </div>
-                <Button
-                  className={classNames("__wab_instance", sty.button__pqD4)}
-                  colors={"link" as const}
-                  submitsForm={true}
-                />
-              </Value>
-            </div>
-            <div className={classNames(projectcss.all, sty.column__hdRz2)}>
-              <Value
-                center={true}
-                children2={
-                  <Button
-                    className={classNames("__wab_instance", sty.button__me0Qc)}
-                    colors={"black" as const}
-                    endIcon={
-                      <RightArrowIcon
-                        className={classNames(projectcss.all, sty.svg__ggs1)}
-                        role={"img"}
-                      />
+                    {
+                      "The market for our product is increasing rapidly in your country. Our chips Product made from fresh and natural plant-based ingredients, so it's healthy and can become an alternative for people who are vegetarian or just want to consume healthy but  tasty snacks"
                     }
-                    rounded={true}
-                    size={"large" as const}
+                  </div>
+                  <Button
+                    className={classNames("__wab_instance", sty.button___71U1P)}
+                    colors={"link" as const}
                     submitsForm={true}
-                  >
-                    {"Read our letter"}
-                  </Button>
-                }
-                className={classNames("__wab_instance", sty.value___2IfAz)}
-                icon={
-                  <PeaceIcon
-                    className={classNames(projectcss.all, sty.svg___3RtFc)}
-                    role={"img"}
                   />
-                }
-                topBottom={true}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__jOsj1
-                  )}
-                >
-                  {"We give back for every sale."}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___5XaWl
-                  )}
-                >
-                  {
-                    "we give back to our people. By Importing from us you also contribute to local communities of traditional Indonesian food producers, because we only produce our product by empowering local Indonesian people"
+                </Value>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__r6Lgo)}>
+                <Value
+                  center={true}
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___2U5Sj
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___3MvOo
+                          )}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
                   }
-                </div>
-                <Button
-                  className={classNames("__wab_instance", sty.button__hob5Z)}
-                  colors={"link" as const}
-                  submitsForm={true}
-                />
-              </Value>
-            </div>
-          </p.Stack>
-        </section>
+                  className={classNames("__wab_instance", sty.value__lDtL8)}
+                  icon={
+                    <MoneySvgrepoComsvgIcon
+                      className={classNames(projectcss.all, sty.svg__zgjWe)}
+                      role={"img"}
+                    />
+                  }
+                  topBottom={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__dMWae
+                    )}
+                  >
+                    {"Reap High Profit by becoming importer"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rC5Ny
+                    )}
+                  >
+                    {
+                      "Our product is in high demand for the export market, now it's your turn to reap high profit by becoming an importer of our products such as tempeh chips, banana chips, emping chips, and cassava chips in your country "
+                    }
+                  </div>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__pqD4)}
+                    colors={"link" as const}
+                    submitsForm={true}
+                  />
+                </Value>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__hdRz2)}>
+                <Value
+                  center={true}
+                  children2={
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__me0Qc
+                      )}
+                      colors={"black" as const}
+                      endIcon={
+                        <RightArrowIcon
+                          className={classNames(projectcss.all, sty.svg__ggs1)}
+                          role={"img"}
+                        />
+                      }
+                      rounded={true}
+                      size={"large" as const}
+                      submitsForm={true}
+                    >
+                      {"Read our letter"}
+                    </Button>
+                  }
+                  className={classNames("__wab_instance", sty.value___2IfAz)}
+                  icon={
+                    <PeaceIcon
+                      className={classNames(projectcss.all, sty.svg___3RtFc)}
+                      role={"img"}
+                    />
+                  }
+                  topBottom={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jOsj1
+                    )}
+                  >
+                    {"We give back for every sale."}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___5XaWl
+                    )}
+                  >
+                    {
+                      "we give back to our people. By Importing from us you also contribute to local communities of traditional Indonesian food producers, because we only produce our product by empowering local Indonesian people"
+                    }
+                  </div>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__hob5Z)}
+                    colors={"link" as const}
+                    submitsForm={true}
+                  />
+                </Value>
+              </div>
+            </p.Stack>
+          </section>
+        ) : null}
         <Footer
           data-plasmic-name={"footer"}
           data-plasmic-override={overrides.footer}
@@ -2059,8 +1413,6 @@ const PlasmicDescendants = {
     "productCard3",
     "article",
     "rating",
-    "emojiValueProps",
-    "columns",
     "whybanner",
     "container42",
     "container5",
@@ -2070,19 +1422,8 @@ const PlasmicDescendants = {
     "productCard7",
     "productCard8",
     "productCard9",
-    "container6",
-    "productCard10",
-    "productCard11",
-    "productCard12",
-    "productCard13",
-    "productCard14",
-    "productCard15",
-    "productCard16",
-    "productCard17",
-    "productCard18",
-    "productCard19",
-    "productCard20",
-    "productCard21",
+    "emojiValueProps",
+    "columns",
     "container433",
     "footer"
   ],
@@ -2097,8 +1438,6 @@ const PlasmicDescendants = {
   productCard3: ["productCard3", "article", "rating"],
   article: ["article"],
   rating: ["rating"],
-  emojiValueProps: ["emojiValueProps", "columns"],
-  columns: ["columns"],
   whybanner: [
     "whybanner",
     "container42",
@@ -2126,33 +1465,8 @@ const PlasmicDescendants = {
   productCard7: ["productCard7"],
   productCard8: ["productCard8"],
   productCard9: ["productCard9"],
-  container6: [
-    "container6",
-    "productCard10",
-    "productCard11",
-    "productCard12",
-    "productCard13",
-    "productCard14",
-    "productCard15",
-    "productCard16",
-    "productCard17",
-    "productCard18",
-    "productCard19",
-    "productCard20",
-    "productCard21"
-  ],
-  productCard10: ["productCard10"],
-  productCard11: ["productCard11"],
-  productCard12: ["productCard12"],
-  productCard13: ["productCard13"],
-  productCard14: ["productCard14"],
-  productCard15: ["productCard15"],
-  productCard16: ["productCard16"],
-  productCard17: ["productCard17"],
-  productCard18: ["productCard18"],
-  productCard19: ["productCard19"],
-  productCard20: ["productCard20"],
-  productCard21: ["productCard21"],
+  emojiValueProps: ["emojiValueProps", "columns"],
+  columns: ["columns"],
   container433: ["container433"],
   footer: ["footer"]
 } as const;
@@ -2167,8 +1481,6 @@ type NodeDefaultElementType = {
   productCard3: typeof ProductCard;
   article: "article";
   rating: typeof Rating;
-  emojiValueProps: typeof EmojiValueProps;
-  columns: "div";
   whybanner: "section";
   container42: "div";
   container5: "div";
@@ -2178,19 +1490,8 @@ type NodeDefaultElementType = {
   productCard7: typeof ProductCard;
   productCard8: typeof ProductCard;
   productCard9: typeof ProductCard;
-  container6: "div";
-  productCard10: typeof ProductCard;
-  productCard11: typeof ProductCard;
-  productCard12: typeof ProductCard;
-  productCard13: typeof ProductCard;
-  productCard14: typeof ProductCard;
-  productCard15: typeof ProductCard;
-  productCard16: typeof ProductCard;
-  productCard17: typeof ProductCard;
-  productCard18: typeof ProductCard;
-  productCard19: typeof ProductCard;
-  productCard20: typeof ProductCard;
-  productCard21: typeof ProductCard;
+  emojiValueProps: typeof EmojiValueProps;
+  columns: "div";
   container433: "div";
   footer: typeof Footer;
 };
@@ -2261,8 +1562,6 @@ export const PlasmicArticles = Object.assign(
     productCard3: makeNodeComponent("productCard3"),
     article: makeNodeComponent("article"),
     rating: makeNodeComponent("rating"),
-    emojiValueProps: makeNodeComponent("emojiValueProps"),
-    columns: makeNodeComponent("columns"),
     whybanner: makeNodeComponent("whybanner"),
     container42: makeNodeComponent("container42"),
     container5: makeNodeComponent("container5"),
@@ -2272,19 +1571,8 @@ export const PlasmicArticles = Object.assign(
     productCard7: makeNodeComponent("productCard7"),
     productCard8: makeNodeComponent("productCard8"),
     productCard9: makeNodeComponent("productCard9"),
-    container6: makeNodeComponent("container6"),
-    productCard10: makeNodeComponent("productCard10"),
-    productCard11: makeNodeComponent("productCard11"),
-    productCard12: makeNodeComponent("productCard12"),
-    productCard13: makeNodeComponent("productCard13"),
-    productCard14: makeNodeComponent("productCard14"),
-    productCard15: makeNodeComponent("productCard15"),
-    productCard16: makeNodeComponent("productCard16"),
-    productCard17: makeNodeComponent("productCard17"),
-    productCard18: makeNodeComponent("productCard18"),
-    productCard19: makeNodeComponent("productCard19"),
-    productCard20: makeNodeComponent("productCard20"),
-    productCard21: makeNodeComponent("productCard21"),
+    emojiValueProps: makeNodeComponent("emojiValueProps"),
+    columns: makeNodeComponent("columns"),
     container433: makeNodeComponent("container433"),
     footer: makeNodeComponent("footer"),
 
