@@ -183,13 +183,13 @@
   position: relative;
   top: auto;
   left: auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: visible;
   background: linear-gradient(#00000099, #00000099),
     url("/plasmic/chipsia/images/empingChipsWholesalejpg.jpg") top 50% left 50% / cover repeat;
-  display: none;
   padding: 20px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -926,11 +926,11 @@
   position: relative;
   top: auto;
   left: auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #f2f2f7;
-  display: none;
 }
 .container433 {
   max-width: 1024px;

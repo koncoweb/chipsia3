@@ -1143,255 +1143,275 @@ function PlasmicArticles__RenderFunc(props: {
         ) : null}
         {true ? (
           <section className={classNames(projectcss.all, sty.section__pFqi)}>
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"container433"}
-              data-plasmic-override={overrides.container433}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.container433)}
-            >
-              <div className={classNames(projectcss.all, sty.column__ngxWa)}>
-                <Value
-                  center={true}
-                  children2={
+            {true ? (
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"container433"}
+                data-plasmic-override={overrides.container433}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.container433)}
+              >
+                <div className={classNames(projectcss.all, sty.column__ngxWa)}>
+                  <Value
+                    center={true}
+                    children2={
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__drdch
+                        )}
+                        colors={"black" as const}
+                        endIcon={
+                          <RightArrowIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__nyS9
+                            )}
+                            role={"img"}
+                          />
+                        }
+                        rounded={true}
+                        size={"large" as const}
+                        submitsForm={true}
+                      >
+                        {"Read our letter"}
+                      </Button>
+                    }
+                    className={classNames("__wab_instance", sty.value__klneQ)}
+                    icon={
+                      <MedalIcon
+                        className={classNames(projectcss.all, sty.svg__crpUe)}
+                        role={"img"}
+                      />
+                    }
+                    topBottom={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gjBl
+                      )}
+                    >
+                      {"We guarantee everything we sell."}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__c8M2T
+                      )}
+                    >
+                      {
+                        "Every product we sell, tempeh chips, banana chips, cassava chips, and emping chips also other products, are made from fresh ingredients with legacy recipes. so you will be satisfied with the product you received"
+                      }
+                    </div>
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__drdch
+                        sty.button__ucoou
                       )}
-                      colors={"black" as const}
-                      endIcon={
-                        <RightArrowIcon
-                          className={classNames(projectcss.all, sty.svg__nyS9)}
-                          role={"img"}
-                        />
-                      }
-                      rounded={true}
-                      size={"large" as const}
+                      colors={"link" as const}
                       submitsForm={true}
                     >
-                      {"Read our letter"}
+                      {"View guarantee"}
                     </Button>
-                  }
-                  className={classNames("__wab_instance", sty.value__klneQ)}
-                  icon={
-                    <MedalIcon
-                      className={classNames(projectcss.all, sty.svg__crpUe)}
-                      role={"img"}
-                    />
-                  }
-                  topBottom={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gjBl
-                    )}
-                  >
-                    {"We guarantee everything we sell."}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__c8M2T
-                    )}
-                  >
-                    {
-                      "Every product we sell, tempeh chips, banana chips, cassava chips, and emping chips also other products, are made from fresh ingredients with legacy recipes. so you will be satisfied with the product you received"
+                  </Value>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__bJu6P)}>
+                  <Value
+                    center={true}
+                    children2={
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__yvGfS
+                        )}
+                        colors={"black" as const}
+                        endIcon={
+                          <RightArrowIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__cFcc4
+                            )}
+                            role={"img"}
+                          />
+                        }
+                        rounded={true}
+                        size={"large" as const}
+                        submitsForm={true}
+                      >
+                        {"Read our letter"}
+                      </Button>
                     }
-                  </div>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__ucoou)}
-                    colors={"link" as const}
-                    submitsForm={true}
+                    className={classNames("__wab_instance", sty.value__rlP6D)}
+                    icon={
+                      <LeafIcon
+                        className={classNames(projectcss.all, sty.svg__yxXlh)}
+                        role={"img"}
+                      />
+                    }
+                    topBottom={true}
                   >
-                    {"View guarantee"}
-                  </Button>
-                </Value>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__bJu6P)}>
-                <Value
-                  center={true}
-                  children2={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xDKen
+                      )}
+                    >
+                      {"100 % organic and Plant based"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___1DWe3
+                      )}
+                    >
+                      {
+                        "The market for our product is increasing rapidly in your country. Our chips Product made from fresh and natural plant-based ingredients, so it's healthy and can become an alternative for people who are vegetarian or just want to consume healthy but  tasty snacks"
+                      }
+                    </div>
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__yvGfS
+                        sty.button___71U1P
                       )}
-                      colors={"black" as const}
-                      endIcon={
-                        <RightArrowIcon
-                          className={classNames(projectcss.all, sty.svg__cFcc4)}
-                          role={"img"}
-                        />
-                      }
-                      rounded={true}
-                      size={"large" as const}
+                      colors={"link" as const}
                       submitsForm={true}
-                    >
-                      {"Read our letter"}
-                    </Button>
-                  }
-                  className={classNames("__wab_instance", sty.value__rlP6D)}
-                  icon={
-                    <LeafIcon
-                      className={classNames(projectcss.all, sty.svg__yxXlh)}
-                      role={"img"}
                     />
-                  }
-                  topBottom={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xDKen
-                    )}
-                  >
-                    {"100 % organic and Plant based"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1DWe3
-                    )}
-                  >
-                    {
-                      "The market for our product is increasing rapidly in your country. Our chips Product made from fresh and natural plant-based ingredients, so it's healthy and can become an alternative for people who are vegetarian or just want to consume healthy but  tasty snacks"
+                  </Value>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__r6Lgo)}>
+                  <Value
+                    center={true}
+                    children2={
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button___2U5Sj
+                        )}
+                        colors={"black" as const}
+                        endIcon={
+                          <RightArrowIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___3MvOo
+                            )}
+                            role={"img"}
+                          />
+                        }
+                        rounded={true}
+                        size={"large" as const}
+                        submitsForm={true}
+                      >
+                        {"Read our letter"}
+                      </Button>
                     }
-                  </div>
-                  <Button
-                    className={classNames("__wab_instance", sty.button___71U1P)}
-                    colors={"link" as const}
-                    submitsForm={true}
-                  />
-                </Value>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__r6Lgo)}>
-                <Value
-                  center={true}
-                  children2={
+                    className={classNames("__wab_instance", sty.value__lDtL8)}
+                    icon={
+                      <MoneySvgrepoComsvgIcon
+                        className={classNames(projectcss.all, sty.svg__zgjWe)}
+                        role={"img"}
+                      />
+                    }
+                    topBottom={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dMWae
+                      )}
+                    >
+                      {"Reap High Profit by becoming importer"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__rC5Ny
+                      )}
+                    >
+                      {
+                        "Our product is in high demand for the export market, now it's your turn to reap high profit by becoming an importer of our products such as tempeh chips, banana chips, emping chips, and cassava chips in your country "
+                      }
+                    </div>
+                    <Button
+                      className={classNames("__wab_instance", sty.button__pqD4)}
+                      colors={"link" as const}
+                      submitsForm={true}
+                    />
+                  </Value>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__hdRz2)}>
+                  <Value
+                    center={true}
+                    children2={
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__me0Qc
+                        )}
+                        colors={"black" as const}
+                        endIcon={
+                          <RightArrowIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__ggs1
+                            )}
+                            role={"img"}
+                          />
+                        }
+                        rounded={true}
+                        size={"large" as const}
+                        submitsForm={true}
+                      >
+                        {"Read our letter"}
+                      </Button>
+                    }
+                    className={classNames("__wab_instance", sty.value___2IfAz)}
+                    icon={
+                      <PeaceIcon
+                        className={classNames(projectcss.all, sty.svg___3RtFc)}
+                        role={"img"}
+                      />
+                    }
+                    topBottom={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jOsj1
+                      )}
+                    >
+                      {"We give back for every sale."}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___5XaWl
+                      )}
+                    >
+                      {
+                        "we give back to our people. By Importing from us you also contribute to local communities of traditional Indonesian food producers, because we only produce our product by empowering local Indonesian people"
+                      }
+                    </div>
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button___2U5Sj
+                        sty.button__hob5Z
                       )}
-                      colors={"black" as const}
-                      endIcon={
-                        <RightArrowIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___3MvOo
-                          )}
-                          role={"img"}
-                        />
-                      }
-                      rounded={true}
-                      size={"large" as const}
+                      colors={"link" as const}
                       submitsForm={true}
-                    >
-                      {"Read our letter"}
-                    </Button>
-                  }
-                  className={classNames("__wab_instance", sty.value__lDtL8)}
-                  icon={
-                    <MoneySvgrepoComsvgIcon
-                      className={classNames(projectcss.all, sty.svg__zgjWe)}
-                      role={"img"}
                     />
-                  }
-                  topBottom={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dMWae
-                    )}
-                  >
-                    {"Reap High Profit by becoming importer"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__rC5Ny
-                    )}
-                  >
-                    {
-                      "Our product is in high demand for the export market, now it's your turn to reap high profit by becoming an importer of our products such as tempeh chips, banana chips, emping chips, and cassava chips in your country "
-                    }
-                  </div>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__pqD4)}
-                    colors={"link" as const}
-                    submitsForm={true}
-                  />
-                </Value>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__hdRz2)}>
-                <Value
-                  center={true}
-                  children2={
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__me0Qc
-                      )}
-                      colors={"black" as const}
-                      endIcon={
-                        <RightArrowIcon
-                          className={classNames(projectcss.all, sty.svg__ggs1)}
-                          role={"img"}
-                        />
-                      }
-                      rounded={true}
-                      size={"large" as const}
-                      submitsForm={true}
-                    >
-                      {"Read our letter"}
-                    </Button>
-                  }
-                  className={classNames("__wab_instance", sty.value___2IfAz)}
-                  icon={
-                    <PeaceIcon
-                      className={classNames(projectcss.all, sty.svg___3RtFc)}
-                      role={"img"}
-                    />
-                  }
-                  topBottom={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__jOsj1
-                    )}
-                  >
-                    {"We give back for every sale."}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___5XaWl
-                    )}
-                  >
-                    {
-                      "we give back to our people. By Importing from us you also contribute to local communities of traditional Indonesian food producers, because we only produce our product by empowering local Indonesian people"
-                    }
-                  </div>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__hob5Z)}
-                    colors={"link" as const}
-                    submitsForm={true}
-                  />
-                </Value>
-              </div>
-            </p.Stack>
+                  </Value>
+                </div>
+              </p.Stack>
+            ) : null}
           </section>
         ) : null}
         <Footer
