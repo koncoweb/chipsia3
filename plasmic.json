@@ -1,0 +1,1421 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "jkU633o1Cz7HrJdwdxhVHk",
+      "projectApiToken": "RNOKYUdvtFBrgxbf09RPjYgL9LzpnT4pIsOrtpsqlLDYBRxYynkAo8OY9YRWPdoaSnRAwOO2e5PWfuVNypw",
+      "projectName": "plasmic-rich-components",
+      "version": "15.3.0",
+      "cssFilePath": "plasmic/plasmic_rich_components/plasmic_plasmic_rich_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "FNIk-CnxQYXU",
+          "name": "RichLayout",
+          "displayName": "hostless-rich-layout",
+          "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
+        },
+        {
+          "id": "k4RvFQUTZKCU",
+          "name": "RichTable",
+          "displayName": "hostless-rich-table",
+          "componentImportPath": "@plasmicpkgs/plasmic-rich-components",
+          "helper": {
+            "name": "tableHelpers",
+            "importPath": "@plasmicpkgs/plasmic-rich-components"
+          }
+        },
+        {
+          "id": "zV8WqibK3ZnC",
+          "name": "RichDetails",
+          "displayName": "hostless-rich-details",
+          "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
+        },
+        {
+          "id": "Hh2OL1EveIF",
+          "name": "RichList",
+          "displayName": "hostless-rich-list",
+          "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
+        }
+      ]
+    },
+    {
+      "projectId": "ohDidvG9XsCeFumugENU3J",
+      "projectApiToken": "YE6pw0s6HZvyAZENjWdhh22CZUvZbVXVeOr7IxU58m9rwk2ITG1RfJGcJjzF2uEC7DCqa4PDzPP1UXxfKuuQ",
+      "projectName": "antd5 hostless",
+      "version": "4.8.0",
+      "cssFilePath": "plasmic/antd_5_hostless/plasmic_antd_5_hostless.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/antd_5_hostless/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "OvH7ENd3m7ug",
+          "name": "AntdSelect",
+          "displayName": "plasmic-antd5-select",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
+        },
+        {
+          "id": "ACzfHW-ZLLiW",
+          "name": "AntdOption",
+          "displayName": "plasmic-antd5-option",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
+        },
+        {
+          "id": "UyLCOYx2BYc4",
+          "name": "AntdTable",
+          "displayName": "plasmic-antd5-table",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
+        },
+        {
+          "id": "OFZLDfR2iHmj",
+          "name": "AntdColumn",
+          "displayName": "plasmic-antd5-table-column",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
+        },
+        {
+          "id": "-EU4JlrV3jtw",
+          "name": "AntdColumnGroup",
+          "displayName": "plasmic-antd5-table-column-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
+        },
+        {
+          "id": "DmrLLHGTjGTE",
+          "name": "AntdConfigProvider",
+          "displayName": "plasmic-antd5-config-provider",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerConfigProvider"
+        },
+        {
+          "id": "aFHKFWNvs7",
+          "name": "AntdCheckbox",
+          "displayName": "plasmic-antd5-checkbox",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
+        },
+        {
+          "id": "2bM6vBkaxc",
+          "name": "AntdCheckboxGroup",
+          "displayName": "plasmic-antd5-checkbox-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
+        },
+        {
+          "id": "-CXVV9tXtP",
+          "name": "AntdRadio",
+          "displayName": "plasmic-antd5-radio",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
+        },
+        {
+          "id": "C3Ce7Sqgay",
+          "name": "AntdRadioButton",
+          "displayName": "plasmic-antd5-radio-button",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
+        },
+        {
+          "id": "PZQhrvIGy1",
+          "name": "AntdRadioGroup",
+          "displayName": "plasmic-antd5-radio-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
+        },
+        {
+          "id": "xx93QbkHH5i",
+          "name": "AntdModal",
+          "displayName": "plasmic-antd5-modal",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerModal"
+        },
+        {
+          "id": "bx9Xzvf5_eu",
+          "name": "AntdButton",
+          "displayName": "plasmic-antd5-button",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerButton"
+        },
+        {
+          "id": "fo-n3xHvdqt",
+          "name": "AntdMenu",
+          "displayName": "plasmic-antd5-menu",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "QSmezaW-Gyu",
+          "name": "AntdMenuItem",
+          "displayName": "plasmic-antd5-menu-item",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "6ySly9jzXsR",
+          "name": "AntdMenuItemGroup",
+          "displayName": "plasmic-antd5-menu-item-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "pwJcAbVYC4M",
+          "name": "AntdMenuDivider",
+          "displayName": "plasmic-antd5-menu-divider",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "nL-8oPEfDNL",
+          "name": "AntdSubMenu",
+          "displayName": "plasmic-antd5-submenu",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "zIDEYq9RgLG",
+          "name": "AntdDropdown",
+          "displayName": "plasmic-antd5-dropdown",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDropdown"
+        },
+        {
+          "id": "5sJiSDZuAW",
+          "name": "AntdOptionGroup",
+          "displayName": "plasmic-antd5-option-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
+        },
+        {
+          "id": "TgJFzUZpvQ",
+          "name": "FormWrapper",
+          "displayName": "plasmic-antd5-form",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm",
+          "helper": {
+            "name": "formHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerForm"
+          }
+        },
+        {
+          "id": "EYHwZh9ILg",
+          "name": "FormItemWrapper",
+          "displayName": "plasmic-antd5-form-item",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
+        },
+        {
+          "id": "zEXrWX9naj",
+          "name": "FormGroup",
+          "displayName": "plasmic-antd5-form-group",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
+        },
+        {
+          "id": "M2mN_XzxO4",
+          "name": "FormListWrapper",
+          "displayName": "plasmic-antd5-form-list",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
+        },
+        {
+          "id": "Vf5hntD2SZ5",
+          "name": "AntdInput",
+          "displayName": "plasmic-antd5-input",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerInput"
+          }
+        },
+        {
+          "id": "RW4q13RFtAd",
+          "name": "AntdPassword",
+          "displayName": "plasmic-antd5-input-password",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerInput"
+          }
+        },
+        {
+          "id": "pTzGlMptTxd",
+          "name": "AntdTextArea",
+          "displayName": "plasmic-antd5-textarea",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerInput"
+          }
+        },
+        {
+          "id": "wxD5qjEe3pU",
+          "name": "AntdInputNumber",
+          "displayName": "plasmic-antd5-input-number",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput"
+        },
+        {
+          "id": "Zzbfw0tfhA",
+          "name": "UploadWrapper",
+          "displayName": "plasmic-antd5-upload",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
+        },
+        {
+          "id": "-gkBqPikhk",
+          "name": "AntdSwitch",
+          "displayName": "plasmic-antd5-switch",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSwitch"
+        },
+        {
+          "id": "lKdkQL67fv",
+          "name": "AntdDatePicker",
+          "displayName": "plasmic-antd5-date-picker",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
+        }
+      ]
+    },
+    {
+      "projectId": "9Vr5YWkf3w7jj6SsTcCEta",
+      "projectApiToken": "IvzN3wRogyeRjfeLl1hqzdjIjkVBvUQXxxVMFtbbpBdxfeSyKuR8fwKkECaSQERdZAIiGsh8aXppCCjBiCYyg",
+      "projectName": "loading-boundary",
+      "version": "0.1.0",
+      "cssFilePath": "plasmic/loading_boundary/plasmic_loading_boundary.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "u-J0rH0B-4",
+          "name": "LoadingBoundary",
+          "displayName": "hostless-loading-boundary",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.20.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "xfguyo8p9zs8FxMdioQAoN",
+      "projectApiToken": "IBf7p2rBXRKu0JiJNy21fpG1htIOtMFhxjpoB017UEMVujLWTqjchEi3QOjyXVnaN68flKNs2PzkD6YJoTcA",
+      "projectName": "plasmic-contentful",
+      "version": "0.19.0",
+      "cssFilePath": "plasmic/plasmic_contentful/plasmic_plasmic_contentful.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_contentful/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "2evg2Dug_px",
+          "name": "ContentfulFetcher",
+          "displayName": "ContentfulFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        },
+        {
+          "id": "XJVyShAqlB9",
+          "name": "ContentfulField",
+          "displayName": "ContentfulField",
+          "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        },
+        {
+          "id": "lXSCSEWn2xb",
+          "name": "ContentfulCredentialsProvider",
+          "displayName": "Contentful CredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        }
+      ]
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": "3.17.0",
+      "cssFilePath": "plasmic/react_slick/plasmic_react_slick.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "Slider",
+          "displayName": "hostless-slider",
+          "componentImportPath": "react-slick"
+        }
+      ]
+    },
+    {
+      "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+      "projectApiToken": "wJaUhDKlouzeLXGYY7s4dcMTuHF5Jh9BxF8ltXQFAo8cITk5X4Xu4JLpdcZUE1ou0OLnErSb15vbDCE2aGQ",
+      "projectName": "Chipsia",
+      "version": "latest",
+      "cssFilePath": "plasmic/chipsia/plasmic_chipsia.module.css",
+      "components": [
+        {
+          "id": "s3EJm_4leMa2is",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "z08NHQzGDufhl_",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "be4gyluQ_9OJzR",
+          "name": "ProductCard",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicProductCard.tsx",
+          "importSpec": {
+            "modulePath": "ProductCard.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicProductCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "3bRucgJCclHNht",
+          "name": "Value",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicValue.tsx",
+          "importSpec": {
+            "modulePath": "Value.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicValue.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "38U0KJJ_izLvF0",
+          "name": "NavBar",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicNavBar.tsx",
+          "importSpec": {
+            "modulePath": "NavBar.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicNavBar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "t1p7ZNjiFGWe7C",
+          "name": "Price",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicPrice.tsx",
+          "importSpec": {
+            "modulePath": "Price.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicPrice.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TjbIATQS4AqoQO",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8qv09TA5T27G7x",
+          "name": "CopyrightSocialLanguage",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicCopyrightSocialLanguage.tsx",
+          "importSpec": {
+            "modulePath": "CopyrightSocialLanguage.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicCopyrightSocialLanguage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "pVPTu88xjlQJ6D",
+          "name": "EmojiValueProps",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicEmojiValueProps.tsx",
+          "importSpec": {
+            "modulePath": "EmojiValueProps.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicEmojiValueProps.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "AiDWqAyaT_P6ZS",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "JRf21XH4cTf7V-",
+          "name": "Rating",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicRating.tsx",
+          "importSpec": {
+            "modulePath": "Rating.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicRating.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FZywUiewNM",
+          "name": "MenuSampingSlider",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicMenuSampingSlider.tsx",
+          "importSpec": {
+            "modulePath": "MenuSampingSlider.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicMenuSampingSlider.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8Gyy7YGh9_a",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "xH65qniBga",
+          "name": "Beritabox",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicBeritabox.tsx",
+          "importSpec": {
+            "modulePath": "Beritabox.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicBeritabox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "y1GacJeVxU",
+          "name": "ArtikelCardVertikal",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicArtikelCardVertikal.tsx",
+          "importSpec": {
+            "modulePath": "ArtikelCardVertikal.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicArtikelCardVertikal.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "rMjz4Axj4o",
+          "name": "Artikel",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicArtikel.tsx",
+          "importSpec": {
+            "modulePath": "Artikel.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicArtikel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "SfDwl07Aj4uB",
+          "name": "Products",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicProducts.tsx",
+          "importSpec": {
+            "modulePath": "../pages/product.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicProducts.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "YZDDbkZzE-",
+          "name": "Partnership",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicPartnership.tsx",
+          "importSpec": {
+            "modulePath": "../pages/partnership.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicPartnership.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "JK6heZL86XJ",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicSelect.tsx",
+          "importSpec": {
+            "modulePath": "Select.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "TVyhejT7Qla",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicSelect__Option.tsx",
+          "importSpec": {
+            "modulePath": "Select__Option.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "A4aUfL_OVYM",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicSelect__OptionGroup.tsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "ege3fRU_qJ2",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicSelect__Overlay.tsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "1dEsznhWyTP-",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        },
+        {
+          "id": "nMmABczlpYPv",
+          "name": "Articles",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicArticles.tsx",
+          "importSpec": {
+            "modulePath": "../pages/articles.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicArticles.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "CvbgQQ_-h1SL",
+          "name": "Read",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicRead.tsx",
+          "importSpec": {
+            "modulePath": "../pages/articles/[entryslug]-[entryidpath].tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicRead.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "wAHNmXk0dn1",
+          "name": "NewsReadCard",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicNewsReadCard.tsx",
+          "importSpec": {
+            "modulePath": "NewsReadCard.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicNewsReadCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "mXQ-qJEh5Wo",
+          "name": "PrivacyPolicy",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicPrivacyPolicy.tsx",
+          "importSpec": {
+            "modulePath": "../pages/privacy-policy.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicPrivacyPolicy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "mjWkbfcaecO",
+          "name": "Footer2",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicFooter2.tsx",
+          "importSpec": {
+            "modulePath": "Footer2.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicFooter2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "v2szJmgCG0v",
+          "name": "ExportProcedures",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicExportProcedures.tsx",
+          "importSpec": {
+            "modulePath": "../pages/product/export-procedures.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicExportProcedures.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "gZIrgP8qyUSd",
+          "name": "WhyImportChipsFromChipsia",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicWhyImportChipsFromChipsia.tsx",
+          "importSpec": {
+            "modulePath": "../pages/product/why-choose-chipsia.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicWhyImportChipsFromChipsia.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "gWt9XtaVK6Q0",
+          "name": "Productitem",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicProductitem.tsx",
+          "importSpec": {
+            "modulePath": "../pages/product/[productslug]-[productid].tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicProductitem.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "wfTulyuJy5S",
+          "name": "Contactsection",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicContactsection.tsx",
+          "importSpec": {
+            "modulePath": "Contactsection.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicContactsection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Drd5MExytXv",
+          "name": "ContainerProduk",
+          "type": "managed",
+          "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+          "renderModuleFilePath": "plasmic/chipsia/PlasmicContainerProduk.tsx",
+          "importSpec": {
+            "modulePath": "ContainerProduk.tsx"
+          },
+          "cssFilePath": "plasmic/chipsia/PlasmicContainerProduk.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "vIBh7hkedAKVLS",
+          "name": "MenuIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Menu.tsx"
+        },
+        {
+          "id": "L-TyCxvo3pUf7i",
+          "name": "SearchIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Search.tsx"
+        },
+        {
+          "id": "YKKd77i4LWr2Gd",
+          "name": "ProfileIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Profile.tsx"
+        },
+        {
+          "id": "d8eh5EqOXVcB1a",
+          "name": "CartIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Cart.tsx"
+        },
+        {
+          "id": "PS6DVWNrsATME2",
+          "name": "RightArrowIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__RightArrow.tsx"
+        },
+        {
+          "id": "ngIR76gLtUeT5W",
+          "name": "EmptyStarIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__EmptyStar.tsx"
+        },
+        {
+          "id": "Ga_F97PX65ud7D",
+          "name": "HalfStarIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__HalfStar.tsx"
+        },
+        {
+          "id": "4gSV8XeD9T8evC",
+          "name": "FullStarIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__FullStar.tsx"
+        },
+        {
+          "id": "AKOPXxR2JQEa5R",
+          "name": "TakeOffIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__TakeOff.tsx"
+        },
+        {
+          "id": "5VuAsHROVMMbW9",
+          "name": "CashIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Cash.tsx"
+        },
+        {
+          "id": "ZqzA1s0tgnFvoY",
+          "name": "SecureIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Secure.tsx"
+        },
+        {
+          "id": "K0_Ms7xwxMqw9s",
+          "name": "PlaneIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Plane.tsx"
+        },
+        {
+          "id": "nmoxyqKZ1SSwmZ",
+          "name": "DocumentIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Document.tsx"
+        },
+        {
+          "id": "CO7fMjG8L3EKiN",
+          "name": "LockIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Lock.tsx"
+        },
+        {
+          "id": "ETtjmWExJ617-B",
+          "name": "Icon15Icon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Icon15.tsx"
+        },
+        {
+          "id": "rGAFqrIjwFkcZM",
+          "name": "MedalIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Medal.tsx"
+        },
+        {
+          "id": "X6eB28EOD3seMa",
+          "name": "PeaceIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Peace.tsx"
+        },
+        {
+          "id": "6CDxjL6AtahbuS",
+          "name": "ShoeIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Shoe.tsx"
+        },
+        {
+          "id": "sxhoIq9e99bhcn",
+          "name": "LeafIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Leaf.tsx"
+        },
+        {
+          "id": "UfO0_iiCxh-WKt",
+          "name": "QuestionIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Question.tsx"
+        },
+        {
+          "id": "HOpLnnPYNzGOMi",
+          "name": "EnterIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Enter.tsx"
+        },
+        {
+          "id": "GP5-PjIyW7G5XF",
+          "name": "DeliveryIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Delivery.tsx"
+        },
+        {
+          "id": "mKnZ2W7boGgxpZ",
+          "name": "SpeakerphoneIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Speakerphone.tsx"
+        },
+        {
+          "id": "_g9_Z-GCCTXMOl",
+          "name": "HomeIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Home.tsx"
+        },
+        {
+          "id": "DRh9Ez1L-ONDKn",
+          "name": "ChevronDownIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__ChevronDown.tsx"
+        },
+        {
+          "id": "AdceC2wJzWZZT_",
+          "name": "LikeIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Like.tsx"
+        },
+        {
+          "id": "N-jxP7Xg6EP8Z1",
+          "name": "TwitterIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Twitter.tsx"
+        },
+        {
+          "id": "hxl6muyYy4ZBPD",
+          "name": "YoutubeIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Youtube.tsx"
+        },
+        {
+          "id": "9JNCxLztTPkrUr",
+          "name": "PintrestIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Pintrest.tsx"
+        },
+        {
+          "id": "leA6COKci4lRME",
+          "name": "Secure2Icon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Secure2.tsx"
+        },
+        {
+          "id": "xNxcTqSkh5uwvZ",
+          "name": "RecycleIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Recycle.tsx"
+        },
+        {
+          "id": "kP95DCYd_TFkaB",
+          "name": "Leaf2Icon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Leaf2.tsx"
+        },
+        {
+          "id": "3Whq8qOw1C5xJN",
+          "name": "FilledCircleIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__FilledCircle.tsx"
+        },
+        {
+          "id": "c0cvA58RQG2MpT",
+          "name": "EmptyCircleIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__EmptyCircle.tsx"
+        },
+        {
+          "id": "P9G33GzWUNBCvN",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "0IKgn9gTvXS9bL",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "YZJyhTwdBvmxzZ",
+          "name": "ChevronDownsvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__ChevronDownsvg.tsx"
+        },
+        {
+          "id": "ptCGSmYMtdK6ex",
+          "name": "ChevronUpsvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__ChevronUpsvg.tsx"
+        },
+        {
+          "id": "OjmfE5EJlBFvwM",
+          "name": "EmailIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Email.tsx"
+        },
+        {
+          "id": "ra_o6xwOHS",
+          "name": "MoneySvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__MoneySvgrepoComsvg.tsx"
+        },
+        {
+          "id": "Nnqp58GAr",
+          "name": "LogoChipsiasvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__LogoChipsiasvg.tsx"
+        },
+        {
+          "id": "SVrAD7F3Yb_",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "MK8lZMaQYeM",
+          "name": "Icon38Icon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Icon38.tsx"
+        },
+        {
+          "id": "mRp-HWExPR7",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "GfngtGmgmAw",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "M0g4OAS62tx",
+          "name": "ArrowRightsvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__ArrowRightsvg.tsx"
+        },
+        {
+          "id": "xWl98ze-mqOQ",
+          "name": "SquaresvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__Squaresvg.tsx"
+        },
+        {
+          "id": "ssuBrmruJLG4",
+          "name": "SquareCheckFilledsvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__SquareCheckFilledsvg.tsx"
+        },
+        {
+          "id": "ztu2deGWU-rr",
+          "name": "SquareMinussvgIcon",
+          "moduleFilePath": "plasmic/chipsia/icons/PlasmicIcon__SquareMinussvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "3IMZtSjTNj7YD0",
+          "name": "visa",
+          "filePath": "../public/plasmic/chipsia/images/visa.svg"
+        },
+        {
+          "id": "MPYKnCgWVy7OWH",
+          "name": "american express",
+          "filePath": "../public/plasmic/chipsia/images/americanExpress.svg"
+        },
+        {
+          "id": "0ToNK4jzgI7FWI",
+          "name": "discover",
+          "filePath": "../public/plasmic/chipsia/images/discover.svg"
+        },
+        {
+          "id": "C3KQi4k0E_VPcm",
+          "name": "mastercard",
+          "filePath": "../public/plasmic/chipsia/images/mastercard.svg"
+        },
+        {
+          "id": "-h6VhzMyxHDIpg",
+          "name": "shoe 2",
+          "filePath": "../public/plasmic/chipsia/images/shoe2.png"
+        },
+        {
+          "id": "mBwYHi9SXOvPGV",
+          "name": "shoe 3",
+          "filePath": "../public/plasmic/chipsia/images/shoe3.png"
+        },
+        {
+          "id": "GGt3R2189qlPB7",
+          "name": "shoe 4",
+          "filePath": "../public/plasmic/chipsia/images/shoe4.png"
+        },
+        {
+          "id": "Uip3HH9wpx7Ve1",
+          "name": "shoe 5",
+          "filePath": "../public/plasmic/chipsia/images/shoe5.png"
+        },
+        {
+          "id": "TnaolniBcAoEbH",
+          "name": "shoe 6",
+          "filePath": "../public/plasmic/chipsia/images/shoe6.png"
+        },
+        {
+          "id": "HDx0ZvvTvPaK-q",
+          "name": "shoe 7",
+          "filePath": "../public/plasmic/chipsia/images/shoe7.png"
+        },
+        {
+          "id": "7KbHFXoKH2q5Vp",
+          "name": "shoe 8",
+          "filePath": "../public/plasmic/chipsia/images/shoe8.png"
+        },
+        {
+          "id": "ttrc1-sJ1jUhRQ",
+          "name": "shoe 9",
+          "filePath": "../public/plasmic/chipsia/images/shoe9.png"
+        },
+        {
+          "id": "yMkzGUdiZOyabh",
+          "name": "shoe 10",
+          "filePath": "../public/plasmic/chipsia/images/shoe10.png"
+        },
+        {
+          "id": "q-cTiek0P9pdd8",
+          "name": "shoe 11",
+          "filePath": "../public/plasmic/chipsia/images/shoe11.png"
+        },
+        {
+          "id": "SOO2frAPnkrr7v",
+          "name": "shoe 12",
+          "filePath": "../public/plasmic/chipsia/images/shoe12.png"
+        },
+        {
+          "id": "Y4jWS4Jy7WXFMR",
+          "name": "shoe 13",
+          "filePath": "../public/plasmic/chipsia/images/shoe13.png"
+        },
+        {
+          "id": "4lJpv4XwTM1-2A",
+          "name": "shoe 14",
+          "filePath": "../public/plasmic/chipsia/images/shoe14.png"
+        },
+        {
+          "id": "eUA3g879s0onPN",
+          "name": "shoe 15",
+          "filePath": "../public/plasmic/chipsia/images/shoe15.png"
+        },
+        {
+          "id": "wv8RjrWoS7BdUD",
+          "name": "shoe 16",
+          "filePath": "../public/plasmic/chipsia/images/shoe16.png"
+        },
+        {
+          "id": "7lGZYBKhLQZ1xo",
+          "name": "shoe 17",
+          "filePath": "../public/plasmic/chipsia/images/shoe17.png"
+        },
+        {
+          "id": "HTyC-hej9HTgdV",
+          "name": "shoe 18",
+          "filePath": "../public/plasmic/chipsia/images/shoe18.png"
+        },
+        {
+          "id": "DsMpt8HRPCExSo",
+          "name": "shoe 19",
+          "filePath": "../public/plasmic/chipsia/images/shoe19.png"
+        },
+        {
+          "id": "3alBEiQx3g_mkQ",
+          "name": "shoe 20",
+          "filePath": "../public/plasmic/chipsia/images/shoe20.png"
+        },
+        {
+          "id": "YEgHNvUgF1LJYl",
+          "name": "shoe 21",
+          "filePath": "../public/plasmic/chipsia/images/shoe21.png"
+        },
+        {
+          "id": "BKvXKTxGxJlczD",
+          "name": "shoe 22",
+          "filePath": "../public/plasmic/chipsia/images/shoe22.png"
+        },
+        {
+          "id": "ZQCZ7m6Pn0JnoZ",
+          "name": "shoe 23",
+          "filePath": "../public/plasmic/chipsia/images/shoe23.png"
+        },
+        {
+          "id": "RuWQ69aLC9DZWe",
+          "name": "shoe 24",
+          "filePath": "../public/plasmic/chipsia/images/shoe24.png"
+        },
+        {
+          "id": "bJO-aufUDaI8yV",
+          "name": "shoe 25",
+          "filePath": "../public/plasmic/chipsia/images/shoe25.png"
+        },
+        {
+          "id": "T3yTtlUM9zgDZ4",
+          "name": "shoe 26",
+          "filePath": "../public/plasmic/chipsia/images/shoe26.png"
+        },
+        {
+          "id": "Nm4YpBqHZOGOao",
+          "name": "shoe 27",
+          "filePath": "../public/plasmic/chipsia/images/shoe27.png"
+        },
+        {
+          "id": "_4wx84vJrYN6Og",
+          "name": "shoe 28",
+          "filePath": "../public/plasmic/chipsia/images/shoe28.png"
+        },
+        {
+          "id": "t_fHrmzqizUteU",
+          "name": "hero",
+          "filePath": "../public/plasmic/chipsia/images/hero.png"
+        },
+        {
+          "id": "1kQspsd_3",
+          "name": "bananas-chips-indonesia.png",
+          "filePath": "../public/plasmic/chipsia/images/bananasChipsIndonesiapng.png"
+        },
+        {
+          "id": "halu6r7Oc",
+          "name": "Indonesian-tempeh-chips-exporter.jpg",
+          "filePath": "../public/plasmic/chipsia/images/indonesianTempehChipsExporterjpg.jpg"
+        },
+        {
+          "id": "FupcW5EW1",
+          "name": "banana-chips-exporter.jpg",
+          "filePath": "../public/plasmic/chipsia/images/bananaChipsExporterjpg.jpg"
+        },
+        {
+          "id": "XJ2qP_2xB",
+          "name": "cassava-chips-exporter-chipsia.jpg",
+          "filePath": "../public/plasmic/chipsia/images/cassavaChipsExporterChipsiajpg.jpg"
+        },
+        {
+          "id": "vP0WvNiOI",
+          "name": "Tempeh-Chips-indonesia (1).jpg",
+          "filePath": "../public/plasmic/chipsia/images/tempehChipsIndonesia1Jpg.jpg"
+        },
+        {
+          "id": "iSK9YmNRu",
+          "name": "banana_chips_indonesia.jpg",
+          "filePath": "../public/plasmic/chipsia/images/bananaChipsIndonesiajpg.jpg"
+        },
+        {
+          "id": "FMPCzqphM",
+          "name": "cassava-chips-supplier-indonesia.jpeg",
+          "filePath": "../public/plasmic/chipsia/images/cassavaChipsSupplierIndonesiajpeg.jpg"
+        },
+        {
+          "id": "W_KNBHEOX",
+          "name": "emping-chips-supplier-indonesia.jpg",
+          "filePath": "../public/plasmic/chipsia/images/empingChipsSupplierIndonesiajpg.jpg"
+        },
+        {
+          "id": "5c0njL2sE",
+          "name": "emping-melinjo_maker-indonesia.jpg",
+          "filePath": "../public/plasmic/chipsia/images/empingMelinjoMakerIndonesiajpg.jpg"
+        },
+        {
+          "id": "8WsP067j3",
+          "name": "emping-chips-wholesale.jpg",
+          "filePath": "../public/plasmic/chipsia/images/empingChipsWholesalejpg.jpg"
+        },
+        {
+          "id": "iQhuHvX1v",
+          "name": "emping-traditional-making-process.jpg",
+          "filePath": "../public/plasmic/chipsia/images/empingTraditionalMakingProcessjpg.jpg"
+        },
+        {
+          "id": "79bbcOW_L",
+          "name": "emping-traditional-making-process-by-hand.jpg",
+          "filePath": "../public/plasmic/chipsia/images/empingTraditionalMakingProcessByHandjpg.jpg"
+        },
+        {
+          "id": "wrytfyTe6Al",
+          "name": "image",
+          "filePath": "../public/plasmic/chipsia/images/image.jpg"
+        },
+        {
+          "id": "vdDb4gtDahs",
+          "name": "image 2",
+          "filePath": "../public/plasmic/chipsia/images/image2.jpg"
+        },
+        {
+          "id": "Ja2NvmI2Hiz",
+          "name": "image 3",
+          "filePath": "../public/plasmic/chipsia/images/image3.jpg"
+        },
+        {
+          "id": "fBYqCjTedtr",
+          "name": "image 4",
+          "filePath": "../public/plasmic/chipsia/images/image4.jpg"
+        },
+        {
+          "id": "0IVFAB85aHi",
+          "name": "image 5",
+          "filePath": "../public/plasmic/chipsia/images/image5.jpg"
+        },
+        {
+          "id": "CJ_Lof2kHzr",
+          "name": "image 6",
+          "filePath": "../public/plasmic/chipsia/images/image6.jpg"
+        },
+        {
+          "id": "c57WTyL434I",
+          "name": "image 7",
+          "filePath": "../public/plasmic/chipsia/images/image7.jpg"
+        },
+        {
+          "id": "uyvZ2wXcUS9",
+          "name": "image 8",
+          "filePath": "../public/plasmic/chipsia/images/image8.jpg"
+        },
+        {
+          "id": "muLFyz1gH4Z",
+          "name": "image 9",
+          "filePath": "../public/plasmic/chipsia/images/image9.jpg"
+        },
+        {
+          "id": "kkKWBLmL-I2",
+          "name": "image 10",
+          "filePath": "../public/plasmic/chipsia/images/image10.jpg"
+        },
+        {
+          "id": "hPJGpX9-1",
+          "name": "Tempeh Chips supplier.jpg",
+          "filePath": "../public/plasmic/chipsia/images/tempehChipsSupplierjpg.jpg"
+        },
+        {
+          "id": "fowyFKg1U",
+          "name": "Banana Chips supplier.jpg",
+          "filePath": "../public/plasmic/chipsia/images/bananaChipsSupplierjpg.jpg"
+        },
+        {
+          "id": "eB_UCXrjP",
+          "name": "Cassava Chips supplier.jpg",
+          "filePath": "../public/plasmic/chipsia/images/cassavaChipsSupplierjpg.jpg"
+        },
+        {
+          "id": "ztQ4aa3un",
+          "name": "Emping Chips supplier.jpg",
+          "filePath": "../public/plasmic/chipsia/images/empingChipsSupplierjpg.jpg"
+        },
+        {
+          "id": "AWw1xuipN",
+          "name": "exportprocedures chipsia.avif",
+          "filePath": "../public/plasmic/chipsia/images/exportproceduresChipsiaavif.avif"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/chipsia/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "G3sjWhr-Dq",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "XZMu2sj2Xg",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "BV_euI4yp87tgs",
+        "name": "Screen",
+        "projectId": "ijbX9dfpBRbW1FGSgs1NJo",
+        "contextFilePath": "plasmic/chipsia/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.300",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.300/dist/plasmic.schema.json"
+}
