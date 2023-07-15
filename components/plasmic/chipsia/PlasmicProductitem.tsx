@@ -91,6 +91,7 @@ export type PlasmicProductitem__OverridesType = {
   container4?: p.Flex<"div">;
   productNameH1?: p.Flex<"h1">;
   slider?: p.Flex<typeof Slider>;
+  freeBox?: p.Flex<"div">;
   descriptionH2Header?: p.Flex<"h2">;
   ingredientH2?: p.Flex<"h2">;
   ingredientsimage?: p.Flex<typeof p.PlasmicImg>;
@@ -101,12 +102,6 @@ export type PlasmicProductitem__OverridesType = {
   ul?: p.Flex<"ul">;
   container42?: p.Flex<"div">;
   container5?: p.Flex<"div">;
-  productCard7?: p.Flex<typeof ProductCard>;
-  productCard8?: p.Flex<typeof ProductCard>;
-  productCard9?: p.Flex<typeof ProductCard>;
-  productCard10?: p.Flex<typeof ProductCard>;
-  productCard11?: p.Flex<typeof ProductCard>;
-  productCard12?: p.Flex<typeof ProductCard>;
   container433?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
 };
@@ -161,42 +156,6 @@ function PlasmicProductitem__RenderFunc(props: {
       },
       {
         path: "productCard2.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard7.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard8.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard9.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard10.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard11.entryidvar",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "productCard12.entryidvar",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
@@ -573,10 +532,9 @@ function PlasmicProductitem__RenderFunc(props: {
                       })() ?? []
                     ).map((currentItem, currentIndex) => (
                       <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__cIIaS
-                        )}
+                        data-plasmic-name={"freeBox"}
+                        data-plasmic-override={overrides.freeBox}
+                        className={classNames(projectcss.all, sty.freeBox)}
                         key={currentIndex}
                       >
                         <p.PlasmicImg
@@ -1141,254 +1099,7 @@ function PlasmicProductitem__RenderFunc(props: {
               data-plasmic-name={"container5"}
               data-plasmic-override={overrides.container5}
               className={classNames(projectcss.all, sty.container5)}
-            >
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___7RUh0)}
-                >
-                  <ProductCard
-                    data-plasmic-name={"productCard7"}
-                    data-plasmic-override={overrides.productCard7}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe14.png",
-                      fullWidth: 840,
-                      fullHeight: 840,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard7",
-                      "entryidvar"
-                    ])}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__cCu1A
-                      )}
-                    >
-                      {"ADIDAS ULTRABOOST DNA X LEGO\u00ae PLATES SHOES"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__t4Kf
-                      )}
-                    >
-                      {"If you can dream it, you can build it."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard8"}
-                    data-plasmic-override={overrides.productCard8}
-                    className={classNames("__wab_instance", sty.productCard8)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe15.png",
-                      fullWidth: 864,
-                      fullHeight: 1080,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard8",
-                      "entryidvar"
-                    ])}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ktTwc
-                      )}
-                    >
-                      {"Nike Air Zoom Pegasus 38"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__fsXmK
-                      )}
-                    >
-                      {"If you can dream it, you can build it."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard9"}
-                    data-plasmic-override={overrides.productCard9}
-                    className={classNames("__wab_instance", sty.productCard9)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe16.png",
-                      fullWidth: 840,
-                      fullHeight: 840,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard9",
-                      "entryidvar"
-                    ])}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zbWNi
-                      )}
-                    >
-                      {"Club C 85 Vintage Men's Shoes"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__a74I
-                      )}
-                    >
-                      {"If you can dream it, you can build it."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard10"}
-                    data-plasmic-override={overrides.productCard10}
-                    className={classNames("__wab_instance", sty.productCard10)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe17.png",
-                      fullWidth: 864,
-                      fullHeight: 1080,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard10",
-                      "entryidvar"
-                    ])}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__i3Izp
-                      )}
-                    >
-                      {"Nike Air Max Genome"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___6UBnF
-                      )}
-                    >
-                      {"If you can dream it, you can build it."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard11"}
-                    data-plasmic-override={overrides.productCard11}
-                    className={classNames("__wab_instance", sty.productCard11)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe18.png",
-                      fullWidth: 840,
-                      fullHeight: 840,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard11",
-                      "entryidvar"
-                    ])}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__oVgTe
-                      )}
-                    >
-                      {"ULTRABOOST DNA 1.0 SHOES"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mNn3E
-                      )}
-                    >
-                      {"If you can dream it, you can build it."}
-                    </div>
-                  </ProductCard>
-                  <ProductCard
-                    data-plasmic-name={"productCard12"}
-                    data-plasmic-override={overrides.productCard12}
-                    className={classNames("__wab_instance", sty.productCard12)}
-                    img={{
-                      src: "/plasmic/chipsia/images/shoe19.png",
-                      fullWidth: 864,
-                      fullHeight: 1080,
-                      aspectRatio: undefined
-                    }}
-                    onEntryidvarChange={p.generateStateOnChangeProp($state, [
-                      "productCard12",
-                      "entryidvar"
-                    ])}
-                    tags={
-                      <Button
-                        colors={"lightGray" as const}
-                        size={"small" as const}
-                        submitsForm={true}
-                      >
-                        {"New"}
-                      </Button>
-                    }
-                  />
-                </p.Stack>
-              ) : null}
-            </div>
+            />
           </section>
           <section className={classNames(projectcss.all, sty.section___4Edrn)}>
             <p.Stack
@@ -1657,6 +1368,7 @@ const PlasmicDescendants = {
     "container4",
     "productNameH1",
     "slider",
+    "freeBox",
     "descriptionH2Header",
     "ingredientH2",
     "ingredientsimage",
@@ -1667,12 +1379,6 @@ const PlasmicDescendants = {
     "ul",
     "container42",
     "container5",
-    "productCard7",
-    "productCard8",
-    "productCard9",
-    "productCard10",
-    "productCard11",
-    "productCard12",
     "container433",
     "footer"
   ],
@@ -1682,13 +1388,15 @@ const PlasmicDescendants = {
     "container4",
     "productNameH1",
     "slider",
+    "freeBox",
     "descriptionH2Header",
     "ingredientH2",
     "ingredientsimage",
     "makingProcessesH2"
   ],
   productNameH1: ["productNameH1"],
-  slider: ["slider"],
+  slider: ["slider", "freeBox"],
+  freeBox: ["freeBox"],
   descriptionH2Header: ["descriptionH2Header"],
   ingredientH2: ["ingredientH2"],
   ingredientsimage: ["ingredientsimage"],
@@ -1698,21 +1406,7 @@ const PlasmicDescendants = {
   productCard2: ["productCard2"],
   ul: ["ul"],
   container42: ["container42"],
-  container5: [
-    "container5",
-    "productCard7",
-    "productCard8",
-    "productCard9",
-    "productCard10",
-    "productCard11",
-    "productCard12"
-  ],
-  productCard7: ["productCard7"],
-  productCard8: ["productCard8"],
-  productCard9: ["productCard9"],
-  productCard10: ["productCard10"],
-  productCard11: ["productCard11"],
-  productCard12: ["productCard12"],
+  container5: ["container5"],
   container433: ["container433"],
   footer: ["footer"]
 } as const;
@@ -1726,6 +1420,7 @@ type NodeDefaultElementType = {
   container4: "div";
   productNameH1: "h1";
   slider: typeof Slider;
+  freeBox: "div";
   descriptionH2Header: "h2";
   ingredientH2: "h2";
   ingredientsimage: typeof p.PlasmicImg;
@@ -1736,12 +1431,6 @@ type NodeDefaultElementType = {
   ul: "ul";
   container42: "div";
   container5: "div";
-  productCard7: typeof ProductCard;
-  productCard8: typeof ProductCard;
-  productCard9: typeof ProductCard;
-  productCard10: typeof ProductCard;
-  productCard11: typeof ProductCard;
-  productCard12: typeof ProductCard;
   container433: "div";
   footer: typeof Footer;
 };
@@ -1811,6 +1500,7 @@ export const PlasmicProductitem = Object.assign(
     container4: makeNodeComponent("container4"),
     productNameH1: makeNodeComponent("productNameH1"),
     slider: makeNodeComponent("slider"),
+    freeBox: makeNodeComponent("freeBox"),
     descriptionH2Header: makeNodeComponent("descriptionH2Header"),
     ingredientH2: makeNodeComponent("ingredientH2"),
     ingredientsimage: makeNodeComponent("ingredientsimage"),
@@ -1821,12 +1511,6 @@ export const PlasmicProductitem = Object.assign(
     ul: makeNodeComponent("ul"),
     container42: makeNodeComponent("container42"),
     container5: makeNodeComponent("container5"),
-    productCard7: makeNodeComponent("productCard7"),
-    productCard8: makeNodeComponent("productCard8"),
-    productCard9: makeNodeComponent("productCard9"),
-    productCard10: makeNodeComponent("productCard10"),
-    productCard11: makeNodeComponent("productCard11"),
-    productCard12: makeNodeComponent("productCard12"),
     container433: makeNodeComponent("container433"),
     footer: makeNodeComponent("footer"),
 
