@@ -233,6 +233,7 @@ function PlasmicContainerProduk__RenderFunc(props: {
           fullHeight: 417,
           aspectRatio: undefined
         }}
+        link={`/product/${"banana-chips"}-${"4XEDiTfqK7Ufq9wnVZw1cx"}`}
         onEntryidvarChange={p.generateStateOnChangeProp($state, [
           "productCard4",
           "entryidvar"
@@ -282,6 +283,7 @@ function PlasmicContainerProduk__RenderFunc(props: {
           fullHeight: 498,
           aspectRatio: undefined
         }}
+        link={`/product/${"cassava-chips"}-${"YaiJdzg6HZH55Gg5gyGXf"}`}
         onEntryidvarChange={p.generateStateOnChangeProp($state, [
           "productCard5",
           "entryidvar"

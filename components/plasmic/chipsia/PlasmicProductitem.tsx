@@ -545,6 +545,7 @@ function PlasmicProductitem__RenderFunc(props: {
                     data-plasmic-override={overrides.slider}
                     autoplay={true}
                     centerMode={true}
+                    centerPadding={"50" as const}
                     className={classNames("__wab_instance", sty.slider)}
                     dots={true}
                   >

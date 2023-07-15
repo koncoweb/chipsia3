@@ -167,9 +167,8 @@
   flex-direction: column;
   object-fit: cover;
   position: relative;
-  height: 100%;
+  height: auto;
   min-width: 0;
-  min-height: 0;
   margin: 10px;
 }
 .freeBox__cIIaS {
@@ -248,6 +247,7 @@
 .contactsection__wCkMa:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  align-self: flex-end;
 }
 .section__xq7Zj {
   display: grid;

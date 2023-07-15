@@ -179,10 +179,7 @@ function PlasmicContactsection__RenderFunc(props: {
             color={"green" as const}
             link={(() => {
               try {
-                return (
-                  "https://wa.me/" +
-                  $props.query.data.response.items[0].fields.buyWhatsappNumber
-                );
+                return "https://wa.me/6281936515980";
               } catch (e) {
                 if (
                   e instanceof TypeError ||

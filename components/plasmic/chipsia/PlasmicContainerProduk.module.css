@@ -1,5 +1,5 @@
 .containerProduk {
-  max-width: 1024px;
+  max-width: none;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -9,7 +9,7 @@
 }
 .containerProduk > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   min-width: 0;
