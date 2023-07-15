@@ -65,7 +65,7 @@ type ArgPropType = keyof PlasmicFooter__ArgsType;
 export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFooter__OverridesType = {
-  root?: p.Flex<"section">;
+  root?: p.Flex<"footer">;
   copyrightSocialLanguage?: p.Flex<typeof CopyrightSocialLanguage>;
 };
 
@@ -116,7 +116,7 @@ function PlasmicFooter__RenderFunc(props: {
   });
 
   return (
-    <section
+    <footer
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
@@ -426,7 +426,7 @@ function PlasmicFooter__RenderFunc(props: {
         data-plasmic-override={overrides.copyrightSocialLanguage}
         className={classNames("__wab_instance", sty.copyrightSocialLanguage)}
       />
-    </section>
+    </footer>
   ) as React.ReactElement | null;
 }
 
@@ -438,7 +438,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "section";
+  root: "footer";
   copyrightSocialLanguage: typeof CopyrightSocialLanguage;
 };
 

@@ -92,7 +92,6 @@ export type PlasmicProductitem__OverridesType = {
   productNameH1?: p.Flex<"h1">;
   slider?: p.Flex<typeof Slider>;
   descriptionH2Header?: p.Flex<"h2">;
-  article?: p.Flex<"article">;
   ingredientH2?: p.Flex<"h2">;
   ingredientsimage?: p.Flex<typeof p.PlasmicImg>;
   makingProcessesH2?: p.Flex<"h2">;
@@ -463,8 +462,11 @@ function PlasmicProductitem__RenderFunc(props: {
               })()}
               title={(() => {
                 try {
-                  return $queries.query.data.response.items[0].fields
-                    .productName;
+                  return (
+                    "Profit by Importing " +
+                    $queries.query.data.response.items[0].fields.productName +
+                    " to your Country !"
+                  );
                 } catch (e) {
                   if (
                     e instanceof TypeError ||
@@ -657,12 +659,10 @@ function PlasmicProductitem__RenderFunc(props: {
                     })() ?? []
                   ).map((currentItem, currentIndex) => (
                     <article
-                      data-plasmic-name={"article"}
-                      data-plasmic-override={overrides.article}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.article
+                        sty.article__cstHj
                       )}
                       key={currentIndex}
                     >
@@ -778,11 +778,11 @@ function PlasmicProductitem__RenderFunc(props: {
                         }
                       })() ?? []
                     ).map((currentItem, currentIndex) => (
-                      <div
+                      <article
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__oD4R
+                          sty.article__oD4R
                         )}
                         key={currentIndex}
                       >
@@ -801,7 +801,7 @@ function PlasmicProductitem__RenderFunc(props: {
                             }
                           })()}
                         </React.Fragment>
-                      </div>
+                      </article>
                     ))}
                   </p.Stack>
                 </div>
@@ -868,7 +868,7 @@ function PlasmicProductitem__RenderFunc(props: {
                     />
                   </div>
                   <p.Stack
-                    as={"div"}
+                    as={"article"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__nq0Ov)}
                   >
@@ -1658,7 +1658,6 @@ const PlasmicDescendants = {
     "productNameH1",
     "slider",
     "descriptionH2Header",
-    "article",
     "ingredientH2",
     "ingredientsimage",
     "makingProcessesH2",
@@ -1684,7 +1683,6 @@ const PlasmicDescendants = {
     "productNameH1",
     "slider",
     "descriptionH2Header",
-    "article",
     "ingredientH2",
     "ingredientsimage",
     "makingProcessesH2"
@@ -1692,7 +1690,6 @@ const PlasmicDescendants = {
   productNameH1: ["productNameH1"],
   slider: ["slider"],
   descriptionH2Header: ["descriptionH2Header"],
-  article: ["article"],
   ingredientH2: ["ingredientH2"],
   ingredientsimage: ["ingredientsimage"],
   makingProcessesH2: ["makingProcessesH2"],
@@ -1730,7 +1727,6 @@ type NodeDefaultElementType = {
   productNameH1: "h1";
   slider: typeof Slider;
   descriptionH2Header: "h2";
-  article: "article";
   ingredientH2: "h2";
   ingredientsimage: typeof p.PlasmicImg;
   makingProcessesH2: "h2";
@@ -1816,7 +1812,6 @@ export const PlasmicProductitem = Object.assign(
     productNameH1: makeNodeComponent("productNameH1"),
     slider: makeNodeComponent("slider"),
     descriptionH2Header: makeNodeComponent("descriptionH2Header"),
-    article: makeNodeComponent("article"),
     ingredientH2: makeNodeComponent("ingredientH2"),
     ingredientsimage: makeNodeComponent("ingredientsimage"),
     makingProcessesH2: makeNodeComponent("makingProcessesH2"),

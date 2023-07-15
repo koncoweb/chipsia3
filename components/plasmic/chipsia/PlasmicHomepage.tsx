@@ -100,7 +100,8 @@ export type PlasmicHomepage__OverridesType = {
   link?: p.Flex<"a"> & Partial<LinkProps>;
   button2?: p.Flex<typeof Button2>;
   container434?: p.Flex<"div">;
-  container4?: p.Flex<"div">;
+  dd?: p.Flex<"dd">;
+  container4?: p.Flex<"dl">;
   dataProvider?: p.Flex<typeof DataProvider>;
   containerProduk?: p.Flex<typeof ContainerProduk>;
   h2?: p.Flex<"h2">;
@@ -523,7 +524,54 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"100%" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToProductitem"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "rmcoTTNPD",
+                                componentUuid: "s3EJm_4leMa2is",
+                                argName: "destination"
+                              },
+                              () =>
+                                `/product/${"tempeh-chips"}-${"3BJr5npk8yGj8Db7NtJFJM"}`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "rmcoTTNPD",
+                              componentUuid: "s3EJm_4leMa2is"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToProductitem"] === "object" &&
+                      typeof $steps["goToProductitem"].then === "function"
+                    ) {
+                      $steps["goToProductitem"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "rmcoTTNPD",
+                          componentUuid: "s3EJm_4leMa2is"
+                        },
+                        $steps["goToProductitem"]
+                      );
+                    }
+                  }}
                   src={{
                     src: "/plasmic/chipsia/images/tempehChipsSupplierjpg.jpg",
                     fullWidth: 600,
@@ -543,8 +591,55 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? ("100%" as const)
-                      : ("auto" as const)
+                      : ("100%" as const)
                   }
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToProductitem"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "lIlQrjVNC",
+                                componentUuid: "s3EJm_4leMa2is",
+                                argName: "destination"
+                              },
+                              () =>
+                                `/product/${"banana-chips"}-${"4XEDiTfqK7Ufq9wnVZw1cx"}`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "lIlQrjVNC",
+                              componentUuid: "s3EJm_4leMa2is"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToProductitem"] === "object" &&
+                      typeof $steps["goToProductitem"].then === "function"
+                    ) {
+                      $steps["goToProductitem"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "lIlQrjVNC",
+                          componentUuid: "s3EJm_4leMa2is"
+                        },
+                        $steps["goToProductitem"]
+                      );
+                    }
+                  }}
                   src={{
                     src: "/plasmic/chipsia/images/bananaChipsSupplierjpg.jpg",
                     fullWidth: 600,
@@ -561,7 +656,54 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"100%" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToProductitem"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "-cJ5FzKJQ",
+                                componentUuid: "s3EJm_4leMa2is",
+                                argName: "destination"
+                              },
+                              () =>
+                                `/product/${"cassava-chips"}-${"YaiJdzg6HZH55Gg5gyGXf"}`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "-cJ5FzKJQ",
+                              componentUuid: "s3EJm_4leMa2is"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToProductitem"] === "object" &&
+                      typeof $steps["goToProductitem"].then === "function"
+                    ) {
+                      $steps["goToProductitem"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "-cJ5FzKJQ",
+                          componentUuid: "s3EJm_4leMa2is"
+                        },
+                        $steps["goToProductitem"]
+                      );
+                    }
+                  }}
                   src={{
                     src: "/plasmic/chipsia/images/cassavaChipsSupplierjpg.jpg",
                     fullWidth: 600,
@@ -578,8 +720,55 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"100%" as const}
                   loading={"lazy" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToProductitem"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "lW3rbBfuE",
+                                componentUuid: "s3EJm_4leMa2is",
+                                argName: "destination"
+                              },
+                              () =>
+                                `/product/${"emping"}-${"1N0B9mP7o3hNoIaipymW9q"}`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "lW3rbBfuE",
+                              componentUuid: "s3EJm_4leMa2is"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToProductitem"] === "object" &&
+                      typeof $steps["goToProductitem"].then === "function"
+                    ) {
+                      $steps["goToProductitem"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "lW3rbBfuE",
+                          componentUuid: "s3EJm_4leMa2is"
+                        },
+                        $steps["goToProductitem"]
+                      );
+                    }
+                  }}
                   src={{
                     src: "/plasmic/chipsia/images/empingChipsSupplierjpg.jpg",
                     fullWidth: 600,
@@ -954,22 +1143,26 @@ function PlasmicHomepage__RenderFunc(props: {
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
-                <div
+                <article
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__eeyIm
+                    sty.article__eeyIm
                   )}
                 >
                   {
                     "Chipsia are trusted Indonesian Snacks exporters , we are supplier of Tempeh Chips, Banana Chips, Cassava Chips, Emping Chips and Tofu Chips with High Quality, Lowest Price, Professional Export Process and Easy Payment Process.\n\nAll chipsia Product are made following traditional and natural Indonesian chips making process, natural and free from added chemicals and preservatives. Chipsia product also using natural plant based ingredient which proved could deliver tasty flavor without any health risk."
                   }
-                </div>
+                </article>
               </Value>
             </p.Stack>
           </section>
-          <section className={classNames(projectcss.all, sty.section__pZzrk)}>
-            <div
+          <dd
+            data-plasmic-name={"dd"}
+            data-plasmic-override={overrides.dd}
+            className={classNames(projectcss.all, sty.dd)}
+          >
+            <dl
               data-plasmic-name={"container4"}
               data-plasmic-override={overrides.container4}
               className={classNames(projectcss.all, sty.container4)}
@@ -989,7 +1182,21 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text___2N5Eg
                         )}
                       >
-                        {"Loading..."}
+                        <React.Fragment>
+                          {(() => {
+                            try {
+                              return "Loading products ... ";
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return "Loading...";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </React.Fragment>
                       </div>
                     )}
                   </ph.DataCtxReader>
@@ -1118,9 +1325,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 </ph.DataCtxReader>
               </LoadingBoundary>
-            </div>
-          </section>
-          <section className={classNames(projectcss.all, sty.section__qcNxB)}>
+            </dl>
+          </dd>
+          <article className={classNames(projectcss.all, sty.article__qcNxB)}>
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -1207,7 +1414,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 </p.Stack>
               </p.Stack>
             </p.Stack>
-          </section>
+          </article>
           <EmojiValueProps
             data-plasmic-name={"emojiValueProps"}
             data-plasmic-override={overrides.emojiValueProps}
@@ -2615,6 +2822,7 @@ const PlasmicDescendants = {
     "link",
     "button2",
     "container434",
+    "dd",
     "container4",
     "dataProvider",
     "containerProduk",
@@ -2651,6 +2859,7 @@ const PlasmicDescendants = {
   link: ["link"],
   button2: ["button2"],
   container434: ["container434"],
+  dd: ["dd", "container4", "dataProvider", "containerProduk"],
   container4: ["container4", "dataProvider", "containerProduk"],
   dataProvider: ["dataProvider", "containerProduk"],
   containerProduk: ["containerProduk"],
@@ -2714,7 +2923,8 @@ type NodeDefaultElementType = {
   link: "a";
   button2: typeof Button2;
   container434: "div";
-  container4: "div";
+  dd: "dd";
+  container4: "dl";
   dataProvider: typeof DataProvider;
   containerProduk: typeof ContainerProduk;
   h2: "h2";
@@ -2811,6 +3021,7 @@ export const PlasmicHomepage = Object.assign(
     link: makeNodeComponent("link"),
     button2: makeNodeComponent("button2"),
     container434: makeNodeComponent("container434"),
+    dd: makeNodeComponent("dd"),
     container4: makeNodeComponent("container4"),
     dataProvider: makeNodeComponent("dataProvider"),
     containerProduk: makeNodeComponent("containerProduk"),

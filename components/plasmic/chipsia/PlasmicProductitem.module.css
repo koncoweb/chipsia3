@@ -109,7 +109,8 @@
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
-  box-shadow: 0px 2px 8px 0px #00000033;
+  box-shadow: 0px 2px 6px 0px #00000033;
+  background: var(--token-zy6xhYnWF8Y7);
   min-width: 0;
   border-radius: 10px;
   padding: 8px;
@@ -236,7 +237,7 @@
   font-weight: 600;
   min-width: 0;
 }
-.article {
+.article__cstHj {
   position: relative;
   width: 100%;
   height: auto;
@@ -368,7 +369,7 @@
   > img {
   margin-top: var(--token-Tf_KtjkxGdsv);
 }
-.text__oD4R {
+.article__oD4R {
   position: relative;
   width: 100%;
   height: auto;

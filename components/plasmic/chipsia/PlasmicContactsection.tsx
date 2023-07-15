@@ -64,7 +64,7 @@ type ArgPropType = keyof PlasmicContactsection__ArgsType;
 export const PlasmicContactsection__ArgProps = new Array<ArgPropType>("query");
 
 export type PlasmicContactsection__OverridesType = {
-  contactsection?: p.Flex<"section">;
+  contactsection?: p.Flex<"aside">;
   buyNowH3?: p.Flex<"h3">;
   columns?: p.Flex<"div">;
 };
@@ -113,7 +113,7 @@ function PlasmicContactsection__RenderFunc(props: {
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
-    <section
+    <aside
       data-plasmic-name={"contactsection"}
       data-plasmic-override={overrides.contactsection}
       data-plasmic-root={true}
@@ -241,7 +241,7 @@ function PlasmicContactsection__RenderFunc(props: {
           </Button2>
         </div>
       </div>
-    </section>
+    </aside>
   ) as React.ReactElement | null;
 }
 
@@ -254,7 +254,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  contactsection: "section";
+  contactsection: "aside";
   buyNowH3: "h3";
   columns: "div";
 };
